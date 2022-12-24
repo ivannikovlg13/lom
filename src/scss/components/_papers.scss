@@ -1,0 +1,44 @@
+.papers {
+  padding: 190px 0 230px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: inset -50px 50px 100px 5px #fff,
+    0px 0px 0px 0px transparent, 9px 2px 12px 10px transparent;
+  box-shadow: inset 0px -50px -100px -30px #fff, 0px 0px 0px 0px transparent,
+    9px 2px 12px 10px transparent;
+  @include tablet {
+    padding: 129px 0;
+  }
+  @include small-tablet {
+    padding: 70px 0;
+  }
+  &__text {
+    max-width: 600px;
+  }
+  &__title,
+  &__subtitle {
+    text-align: left;
+  }
+  &__subtitle {
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  &__btn {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 15px 30px;
+  }
+  &__img {
+    position: absolute;
+    top: -155px;
+    right: -162px;
+    z-index: -1;
+    object-fit: scale-down;
+    @include tablet {
+      width: 500px;
+      bottom: 0;
+      margin-top: auto;
+      opacity: 0.4;
+    }
+  }
+}

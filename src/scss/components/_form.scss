@@ -1,0 +1,86 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  @include form-shadow;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    @include shadow;
+    transform: scale(1.05);
+  }
+  &__title {
+    margin: 0;
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  &__img {
+    border-radius: 50%;
+    padding: 10px;
+    margin: auto;
+    @include form-shadow;
+  }
+  &__input {
+    border-radius: 5px;
+    width: 100%;
+    height: 64px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    @include form-shadow;
+    color: var(--dark-color);
+    &:hover {
+      transform: scale(1.05);
+    }
+    @include small-tablet {
+      height: 50px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+    &::placeholder {
+      color: rgba(40, 41, 68, 0.7);
+      color: var(--dark-color);
+    }
+  }
+  &__cities {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 64px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 3px 0;
+    transition: all 0.3s ease-in-out;
+    @include form-shadow;
+    @include small-tablet {
+      height: 50px;
+      padding: 0 16px;
+      font-size: 14px;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .just-validate-error-label {
+    color: var(--light-color) !important;
+    margin-bottom: 3px;
+  }
+  &__checkbox {
+    &-name {
+      color: var(--dark-color);
+      font-weight: 500;
+    }
+  }
+}

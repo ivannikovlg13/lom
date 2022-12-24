@@ -1,0 +1,196 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  @include sub-shadow;
+  background-color: var(--light-color);
+  z-index: 15;
+  &__container {
+    @include flex-all-sb;
+  }
+  &__logo {
+    z-index: 12;
+    font-size: 16px;
+    color: var(--accent-color);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    @include tablet {
+      margin: 0 auto;
+      padding-left: 30px;
+    }
+    &-img {
+      @include small-tablet {
+        width: 30px;
+      }
+    }
+  }
+  &__nav {
+    @include flex-all-sb;
+    width: 100%;
+    &-name {
+      font-size: 20px;
+      color: var(--dark-color);
+      font-weight: 700;
+      @include small-tablet {
+        font-size: 14px;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 60px;
+    margin: 0 auto;
+    @include big-desktop {
+      gap: 25px;
+    }
+    @include tablet {
+      flex-direction: column-reverse;
+      text-align: center;
+      border-top: 2px solid var(--accent-color);
+    }
+  }
+  &__item {
+    &--withmenu {
+      position: relative;
+      &:hover {
+        .submenu {
+          display: block;
+          animation: fade 0.3s linear;
+          &__arrow {
+            transform: rotate(180deg);
+            fill: var(--dark-color);
+          }
+        }
+      }
+
+      .submenu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15px;
+        border: 2px solid white;
+        border-top: 0;
+        display: none;
+        z-index: 10;
+        padding-top: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        @include tablet {
+          display: block;
+          background-color: transparent;
+          color: var(--dark-color);
+        }
+        & > li {
+          background-color: var(--dark-color);
+          &:last-child {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          @include tablet {
+            background-color: transparent;
+          }
+        }
+        &__link {
+          display: flex;
+          justify-content: center;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: var(--light-color);
+          padding: 15px;
+          transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+          @include for-desktop {
+            &:hover {
+              background-color: var(--light-color);
+              color: var(--dark-color);
+            }
+          }
+          @include tablet {
+            color: var(--light-color);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    transition: color 0.3s ease-in-out;
+    @include tablet {
+      color: var(--light-color);
+      font-size: 16px;
+      font-weight: 700;
+    }
+    @include big-desktop {
+      font-size: 13px;
+    }
+    .submenu__arrow {
+      fill: var(--dark-color);
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--withmenu {
+      @include flex-v-center;
+      gap: 15px;
+      .submenu__arrow {
+        width: 14px;
+        height: 10px;
+        transform: rotate(0);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 700;
+
+    @include tablet {
+      position: absolute;
+      color: black;
+      top: 150px;
+      gap: 30px;
+      width: 100%;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+    @include small-tablet {
+      display: flex;
+      gap: 30px;
+      flex-direction: inherit;
+      text-align: center;
+      width: auto;
+      padding: 50px 0;
+      border-bottom: 1px solid var(--light-color);
+      border-top: 1px solid var(--light-color);
+    }
+    @include mobile {
+      top: 30px;
+      border: none;
+    }
+    &-link {
+      color: white;
+      color: var(--dark-color);
+      @include tablet {
+        color: var(--light-color);
+        background-color: var(--accent-color);
+        border-radius: 25px;
+        padding: 12px;
+        font-size: 16px;
+      }
+    }
+  }
+}

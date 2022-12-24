@@ -1,0 +1,111 @@
+.offers {
+  margin-bottom: 50px;
+  @include small-tablet {
+    padding: 50px 0;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      width: 100%;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    background: var(--light-color);
+    border-radius: 10px;
+    @include shadow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    @include small-tablet {
+      height: 200px;
+    }
+    @include mobile {
+      height: 180px;
+    }
+  }
+  &__inner {
+    padding: 0 10px;
+    flex: 1 1 auto;
+  }
+  &__box {
+    @include flex-v-center;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: var(--dark-color);
+    margin: 0 auto;
+  }
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    @include small-tablet {
+      font-size: 12px;
+    }
+  }
+  &__btn {
+    margin-left: auto;
+    width: 60px;
+    height: 60px;
+    background: var(--dark-color);
+    cursor: pointer;
+    @include flex-all-center;
+    transition: width 0.2s ease-out;
+    z-index: 2;
+    border-bottom-right-radius: 10px;
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+    &--text {
+      display: none;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-right: 10px;
+      color: var(--light-color);
+    }
+    svg {
+      height: 22px;
+      width: 16px;
+      transform: rotate(0deg);
+      transition: transform 0.3s ease-in-out;
+      fill: white;
+    }
+    @include for-hover {
+      &:hover {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        justify-content: flex-end;
+        padding-right: 20px;
+        .offers__btn--text {
+          animation: fade 0.3s ease-in;
+          display: block;
+        }
+        svg {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

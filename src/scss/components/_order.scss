@@ -1,0 +1,75 @@
+.order {
+  padding: 150px 0 50px;
+  margin-bottom: 50px;
+  @include sub-shadow;
+  @include tablet {
+    padding: 120px 0 50px;
+    border-bottom: 1px solid var(--light-color);
+  }
+  @include mobile {
+    padding: 100px 0 50px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    @include tablet {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__left {
+    grid-column: 5 span;
+    color: var(--light-color);
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      padding-left: 0;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      margin-left: 0;
+    }
+  }
+  &__right {
+    grid-column: 7 span;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    @include tablet {
+      padding-right: 0;
+      justify-content: center;
+    }
+  }
+  &__title,
+  &__descr {
+    margin: 0;
+    line-height: 130%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    @include tablet {
+      font-size: 28px;
+    }
+    @include small-tablet {
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+  &__descr {
+    font-size: 20px;
+    color: var(--accent-color);
+    font-weight: 700;
+    @include small-tablet {
+      font-size: 16px;
+    }
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+}

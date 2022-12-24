@@ -1,0 +1,7 @@
+.information {
+  color: var(--light-color);
+  &__lists {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 30px;
+  }
+}
