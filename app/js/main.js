@@ -292,7 +292,7 @@ function openModal() {
   btns.forEach(btn => btn.addEventListener("click", () => {
     //Выведение активной картинки
     const activeImage = btn.closest("div[title]").title;
-    const activeText = `${".popup__text"}-${activeImage}`;
+    // const activeText = `${popupText}-${activeImage}`;
     img.src = `${BASE_URL}img/${activeImage}.avif`;
     // //Выведение активного тайтла
     // title.innerHTML = activeImage;
@@ -356,7 +356,7 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team__conten
   },
   breakpoints: {
     // when window width is >= 480px
-    768: {
+    576: {
       slidesPerView: 3,
       spaceBetween: 30
     }

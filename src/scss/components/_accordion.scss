@@ -1,12 +1,25 @@
 .price {
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
   @include form-shadow;
   padding: 20px 30px 40px;
   border-radius: 10px;
+  &__title {
+    margin: 10px 0;
+  }
   &__subtitle {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 800;
     color: var(--text-color);
+  }
+  &__info {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--light-color);
+    background: var(--dark-color);
+    border-radius: 25px;
+    padding: 15px;
   }
 }
 .accordion {
@@ -107,8 +120,12 @@
 
       .content__text {
         margin-top: 25px;
-        padding-left: 30px;
-        color: var(--text-color);
+        padding: 0 30px;
+        text-decoration: underline;
+        border: 1px solid var(--dark-color);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
         font-weight: 700;
 
         &:first-child {

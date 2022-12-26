@@ -156,6 +156,11 @@
     line-height: 160%;
     color: var(--text-color);
     margin-bottom: 20px;
+    display: none;
+    // &-alum,
+    // &-med {
+    //   display: none;
+    // }
   }
   &__subtitle {
     margin: 0;

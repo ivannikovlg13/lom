@@ -66,7 +66,7 @@
         </li>
         <li class="nav__item">
           <a
-            href="./price.html"
+            href="#price"
             class="nav__link header__link"
             title="Blog and News"
             data-menu-item
@@ -118,11 +118,11 @@
 </header>
 
       <main class="main">
-        <section class="order">
+        <section class="order" id="order">
   <div class="container order__container">
     <div class="order__left">
       <h2 class="order__title">ПРИЙОМ КОЛЬОРОВОГО МЕТАЛОБРУХТУ</h2>
-      <img src="./img/hero.jpeg" alt="hero" />
+      <img src="./img/hero.jpeg" class="order__hero-img" alt="hero" />
     </div>
     <div class="order__right">
       <form action="#" id="tg" class="form order__form">
@@ -213,7 +213,7 @@
             src="img/alum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="med"
+            alt="alum"
           />
         </picture>
         <div class="offers__inner">
@@ -426,7 +426,7 @@
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="auto-accum">
+      <div class="offers__item" title="auto-accum2">
         <picture>
           <source srcset="img/auto-accum2.jpeg" type="image/avif" />
           <source srcset="img/auto-accum2.jpeg" type="image/webp" />
@@ -463,8 +463,16 @@
 </section>
 
         <!-- Accordion -->
-<section class="price">
-  <h1 class="main-title--light main-title--center">Прайс 2023</h1>
+<section class="price" id="price">
+  <img
+    loading="lazy"
+    src="./img/svg/weight.svg"
+    class="form__img form__img-price"
+    width="50px"
+    height="50px"
+    alt="weight"
+  />
+  <h1 class="main-title--light main-title--center price__title">Прайс 2023</h1>
   <p class="main-subtitle main-subtitle--center">
     Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
     <span class="price__subtitle"
@@ -472,7 +480,7 @@
     >
   </p>
   <div class="accordion">
-    <div class="accordion__item">
+    <div class="accordion__item accordion__item-active">
       <div class="accordion__item-trigger">
         <div class="trigger__num">1.</div>
         <div class="trigger__text">Мiдь</div>
@@ -651,6 +659,7 @@
         </div>
       </div>
     </div>
+    <div class="price__info">дійсний з 19.12.2022р.</div>
   </div>
 </section>
  <section class="team" id="team">
@@ -662,6 +671,7 @@
       Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
     </p>
     <div class="swiper team__content">
+      <a href="#" class="team__link">Подивитись усi статті</a>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="#" class="team__item">
@@ -702,20 +712,6 @@
             <h5 class="team__item-title">
               ТОП 10 стран по производству меди 2022
             </h5>
-            <picture>
-              <img
-                loading="lazy"
-                src="img/provod4.jpeg"
-                class="image team__item--image"
-                width="100%"
-                height="300px"
-                alt="team-image"
-              />
-            </picture>
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#" class="team__item">
             <picture>
               <img
                 loading="lazy"
@@ -795,6 +791,7 @@
           alt="lock-image"
         />
         <h5 class="benefits__item--title">8 рокiв на ринку</h5>
+        <a href="#" class="benefits__item--title">Читати далi</a>
         <p class="benefits__item--text">
           At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
           eripuit mentitum.
@@ -852,111 +849,54 @@
 </section>
  <section class="information">
   <div class="container">
-    <h2 class="benefits__title">Як здати металобрухт у Запоріжжі?</h2>
-    <p class="information__text">
-      Щоб здати брухт у Запоріжжі, потрібно зв’язатися з менеджерами нашої
-      компанії. Ми оперативно приймемо замовлення, обумовивши умови, призначимо
-      дату. Здавання великої кількості брухту пов’язане з необхідністю залучення
-      вантажного транспорту або спеціальної вантажної техніки. Іноді для
-      спрощення транспортування великогабаритних відходів потрібні послуги
-      різьбяра. Звертаючись за допомогою до професіоналів, ви отримуєте весь
-      спектр послуг. Нашим клієнтам не потрібно думати, як здати брухт у
-      Запоріжжі, адже ми готові зробити це за них. При цьому неважливо, як
-      далеко ви розташовані від нашої бази, ми вивеземо всі необхідні відходи.
-      Часто при великих обсягах металобрухту самовивіз виявляється безкоштовним.
-      Здача відходів до пункту прийому металобрухту в Запоріжжі здійснюється в
-      наступній послідовності:
-    </p>
-    <ol class="information__list-num information__lists">
-      <li class="information__list-item">
-        Необхідно зателефонувати до компанії та залишити заявку на вивезення
-        металевих відходів, вказавши перелік необхідних робіт, приблизний обсяг
-        брухту та його місцезнаходження.
-      </li>
-      <li class="information__list-item">
-        Фахівець безкоштовно виїжджає на майданчик і проводить оцінку обсягів і
-        якості металобрухту, при необхідності здійснюється навантаження
-        відходів, що здаються.
-      </li>
-      <li class="information__list-item">
-        За наявності великогабаритних відходів надається послуга різання та
-        демонтажу.
-      </li>
-      <li class="information__list-item">
-        Проводиться хімічний аналіз зразків для з’ясування їхньої чистоти та
-        стабільності структури. Усі роботи виконуються із використанням
-        сучасного обладнання.
-      </li>
-      <li class="information__list-item">
-        У разі співробітництва з юридичною особою здійснюється підготовка
-        комерційної пропозиції та договору на скупку металу.
-      </li>
-      <li class="information__list-item">
-        Здійснюється транспортування брухту з об’єкта. Послугу можна замовити у
-        нашій компанії або здійснити перевезення самостійно.
-      </li>
-      <li class="information__list-item">
-        Після транспортування брухту на базу проводиться зважування на
-        високоточних вагах і остаточний розрахунок вартості.
-      </li>
-    </ol>
-    <h2 class="benefits__title">Як здати металобрухт у Запоріжжі?</h2>
-    <p class="information__text">
-      Компанія «Гармет» здійснює купівлю/продаж металобрухту в Запоріжжі на
-      найвигідніших умовах. Ми працюємо на підставі ліцензії та повністю
-      дотримуємося чинного законодавства. Здійснюємо прийом кольорового
-      металобрухту у Запоріжжі наступних видів:
-    </p>
-    <ul class="information__list information__lists">
-      <li class="information__list-item">мідь</li>
-      <li class="information__list-item">латунь</li>
-      <li class="information__list-item">бронза</li>
-      <li class="information__list-item">алюміній</li>
-      <li class="information__list-item">нержавіюча сталь</li>
-      <li class="information__list-item">свинець</li>
-      <li class="information__list-item">олово</li>
-      <li class="information__list-item">магній</li>
-      <li class="information__list-item">цинк</li>
-      <li class="information__list-item">титан</li>
-    </ul>
-    <h2 class="benefits__title">Як здати металобрухт у Запоріжжі?</h2>
-    <p class="information__text">
-      Компанія «Гармет» здійснює купівлю/продаж металобрухту в Запоріжжі на
-      найвигідніших умовах. Ми працюємо на підставі ліцензії та повністю
-      дотримуємося чинного законодавства. Здійснюємо прийом кольорового
-      металобрухту у Запоріжжі наступних видів:
-    </p>
-    <ul class="information__list information__lists">
-      <li class="information__list-item">мідь</li>
-      <li class="information__list-item">латунь</li>
-      <li class="information__list-item">бронза</li>
-      <li class="information__list-item">алюміній</li>
-      <li class="information__list-item">нержавіюча сталь</li>
-      <li class="information__list-item">свинець</li>
-      <li class="information__list-item">олово</li>
-      <li class="information__list-item">магній</li>
-      <li class="information__list-item">цинк</li>
-      <li class="information__list-item">титан</li>
-    </ul>
-    <h2 class="benefits__title">Як здати металобрухт у Запоріжжі?</h2>
-    <p class="information__text">
-      Компанія «Гармет» здійснює купівлю/продаж металобрухту в Запоріжжі на
-      найвигідніших умовах. Ми працюємо на підставі ліцензії та повністю
-      дотримуємося чинного законодавства. Здійснюємо прийом кольорового
-      металобрухту у Запоріжжі наступних видів:
-    </p>
-    <ul class="information__list">
-      <li class="information__list-item">мідь</li>
-      <li class="information__list-item">латунь</li>
-      <li class="information__list-item">бронза</li>
-      <li class="information__list-item">алюміній</li>
-      <li class="information__list-item">нержавіюча сталь</li>
-      <li class="information__list-item">свинець</li>
-      <li class="information__list-item">олово</li>
-      <li class="information__list-item">магній</li>
-      <li class="information__list-item">цинк</li>
-      <li class="information__list-item">титан</li>
-    </ul>
+    <div class="accordion">
+      <div class="accordion__item accordion__item-active">
+        <div class="accordion__item-trigger">
+          <div class="trigger__text">Як здати металобрухт у Запоріжжі?</div>
+          <div class="trigger__img">
+            <span class="line1"></span>
+            <span class="line2"></span>
+          </div>
+        </div>
+        <div class="accordion__item-content">
+          Щоб здати брухт у Запоріжжі, потрібно зв’язатися з менеджерами нашої
+          компанії. Ми оперативно приймемо замовлення, обумовивши умови,
+          призначимо дату. Здавання великої кількості брухту пов’язане з
+          необхідністю залучення вантажного транспорту або спеціальної вантажної
+          техніки. Іноді для спрощення транспортування великогабаритних відходів
+          потрібні послуги різьбяра. Звертаючись за допомогою до професіоналів,
+          ви отримуєте весь спектр послуг. Нашим клієнтам не потрібно думати, як
+          здати брухт у Запоріжжі, адже ми готові зробити це за них. При цьому
+          неважливо, як далеко ви розташовані від нашої бази, ми вивеземо всі
+          необхідні відходи. Часто при великих обсягах металобрухту самовивіз
+          виявляється безкоштовним. Здача відходів до пункту прийому
+          металобрухту в Запоріжжі здійснюється в наступній послідовності:
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__item-trigger">
+          <div class="trigger__text">Як здати металобрухт у Запоріжжі?</div>
+          <div class="trigger__img">
+            <span class="line1"></span>
+            <span class="line2"></span>
+          </div>
+        </div>
+        <div class="accordion__item-content">
+          Щоб здати брухт у Запоріжжі, потрібно зв’язатися з менеджерами нашої
+          компанії. Ми оперативно приймемо замовлення, обумовивши умови,
+          призначимо дату. Здавання великої кількості брухту пов’язане з
+          необхідністю залучення вантажного транспорту або спеціальної вантажної
+          техніки. Іноді для спрощення транспортування великогабаритних відходів
+          потрібні послуги різьбяра. Звертаючись за допомогою до професіоналів,
+          ви отримуєте весь спектр послуг. Нашим клієнтам не потрібно думати, як
+          здати брухт у Запоріжжі, адже ми готові зробити це за них. При цьому
+          неважливо, як далеко ви розташовані від нашої бази, ми вивеземо всі
+          необхідні відходи. Часто при великих обсягах металобрухту самовивіз
+          виявляється безкоштовним. Здача відходів до пункту прийому
+          металобрухту в Запоріжжі здійснюється в наступній послідовності:
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -965,29 +905,72 @@
   <div class="container">
     <div class="footer__links">
       <ul class="footer__list list-reset">
-        Company
-        <li class="footer__list--item"><a href="#">About</a></li>
-        <li class="footer__list--item"><a href="#">Leadership</a></li>
-        <li class="footer__list--item"><a href="#">Blog</a></li>
-        <li class="footer__list--item"><a href="#">Partners</a></li>
-        <li class="footer__list--item"><a href="#">Press</a></li>
+          ТОВ Схiд-Лом
+        <li class="footer__list--item"><a href="#"><svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#request"></use>
+        </svg>Залишити заявку</a></li>
+        <li class="footer__list--item"><a href="#">
+          <svg class="footer__image image">
+            <use xlink:href="img/sprite.svg#price"></use>
+          </svg>Прайс</a></li>
+        <li class="footer__list--item"><a href="#"><svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#company"></use>
+        </svg>Про компанiю</a></li>
+        <li class="footer__list--item"><a href="#">
+          <svg class="footer__image image">
+            <use xlink:href="img/sprite.svg#location"></use>
+          </svg>Адреси</a></li>
+        <li class="footer__list--item"><a href="#"><svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#article"></use>
+        </svg>Усi статті</a></li>
+        <li class="footer__list--item"><a href="#">
+          <svg class="footer__image image">
+            <use xlink:href="img/sprite.svg#question"></use>
+          </svg>Основнi запитання</a></li>
       </ul>
       <ul class="footer__list list-reset">
-        Products overview
-        <li class="footer__list--item"><a href="#">Products overview</a></li>
-        <li class="footer__list--item"><a href="#">Marketplace</a></li>
-        <li class="footer__list--item"><a href="#">Pricing</a></li>
-        <li class="footer__list--item"><a href="#">Careers</a></li>
+        Основні позиції 
+        <li class="footer__list--item"><a href="#">Мiдь</a></li>
+        <li class="footer__list--item"><a href="#">Алюмiнiй</a></li>
+        <li class="footer__list--item"><a href="#">Латунь</a></li>
+        <li class="footer__list--item"><a href="#">Нержавiюча сталь</a></li>
+        <li class="footer__list--item"><a href="#">Брухт кабелю</a></li>
+        <li class="footer__list--item"><a href="#">Електронний брухт</a></li>
+        <li class="footer__list--item"><a href="#">Електродвигуни б/в</a></li>
+        <li class="footer__list--item"><a href="#">Автоаккумулятори б/в</a></li>
       </ul>
       <ul class="footer__list list-reset">
         Контакти
-        <li class="footer__list--item">        <a class="header__info-link" href="tel:+380955392000"
-          >+380955392000(м.Дніпро)</a</li>
-        <li class="footer__list--item">        <a class="header__info-link" href="tel:+380689608138"
-          >+380689608138(м.Київ)</a</li>
-        <li class="footer__list--item"><a href="mailto:serg@gmail.com">serg@gmail.com</a></li>
-        <li class="footer__list--item"><a href="#">Careers</a></li>
-        <li class="footer__list--item"><a href="#">Press</a></li>
+        <li class="footer__list--item"><a class="header__info-link" href="tel:+380955392000"
+          >          <svg class="footer__image image">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>(м.Дніпро)</a</li>
+        <li class="footer__list--item"><a class="header__info-link" href="tel:+380689608138"
+          >          <svg class="footer__image image">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>(м.Київ)</a</li>
+        
+        <li class="footer__list--item"><a href="https://t.me/semen1555">        
+          <svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#telegram"></use>
+        </svg>(м.Дніпро)</a>
+      </li>
+        <li class="footer__list--item">
+          <a href="#">          
+            <svg class="footer__image image">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>(м.Київ)
+          </a>
+        </li>
+        <li class="footer__list--item"><a href="#">        <svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#viber"></use>
+        </svg>м.Дніпро)</a></li>
+        <li class="footer__list--item"><a href="#">        <svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#viber"></use>
+        </svg>(м.Київ)</a></li>
+        <li class="footer__list--item"><a href="mailto:serg@gmail.com"><svg class="footer__image image">
+          <use xlink:href="img/sprite.svg#mail"></use>
+        </svg>serg@gmail.com</a></li>
       </ul>
     </div>
     <div class="footer__bottom">
@@ -1056,19 +1039,19 @@
           </picture>
         </div>
         <div class="popup__links">
-          <a href="./price.html" class="popup__link">
-            <span class="popup__link-text">Заявка</span>
+          <a href="https://t.me/semen1555" class="popup__link">
+            <span class="popup__link-text">м.Дніпро</span>
             <img
               loading="lazy"
-              src="./img/svg/delivery.svg"
+              src="./img/svg/telegram.svg"
               class="popup__image-link"
               width="40px"
               height="auto"
-              alt="form"
+              alt="send"
             />
-          </a>
+          </a>          
           <a href="#" class="popup__link">
-            <span class="popup__link-text">Написати</span>
+            <span class="popup__link-text">м.Київ</span>
             <img
               loading="lazy"
               src="./img/svg/telegram.svg"
@@ -1078,7 +1061,7 @@
               alt="send"
             />
           </a>
-          <a href="#" class="popup__link">
+          <a href="tel:+380955392000" class="popup__link">
             <span class="popup__link-text">Дзвiнок</span>
             <img
               loading="lazy"
@@ -1120,9 +1103,8 @@
                   <h3 class="popup__subtitle">
                     Ціни на прийом у Києві та Дніпрі
                   </h3>
-                  <p class="popup__text">
-                    <p class="popup__text-alum" style="display:none">
-                      Вартість med вторинної сировини залежить не тільки від її
+                  <p class="popup__text-alum">
+                      Вартість вторинної сировини залежить не тільки від її
                       виду та якості, а й від політики конкретного пункту прийому.
                       Ціна за кг в одній організації відрізнятиметься від вартості
                       в іншій. Наша компанія має великий досвід роботи на ринку
@@ -1132,7 +1114,7 @@
                       клієнтів. Продати у нас алюміній на брухт ви зможете за
                       найприємнішою ціною.
                     </p>
-                    <p class="popup__text-med">
+                    <p class="popup__text">
                       Вартість med вторинної сировини залежить не тільки від її
                       виду та якості, а й від політики конкретного пункту прийому.
                       Ціна за кг в одній організації відрізнятиметься від вартості
@@ -1253,6 +1235,7 @@
     </div>
   </div>
 </div>
+
 
   </body>
 </html>

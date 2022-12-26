@@ -26,6 +26,9 @@
     padding: 10px;
     margin: auto;
     @include form-shadow;
+    &-price {
+      padding: 5px;
+    }
   }
   &__input {
     border-radius: 5px;

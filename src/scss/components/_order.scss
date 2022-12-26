@@ -9,6 +9,20 @@
   @include mobile {
     padding: 100px 0 50px;
   }
+  &__hero {
+    &-img {
+      @include tablet {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        margin: 0 auto;
+      }
+      @include mobile {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

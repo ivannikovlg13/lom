@@ -1,7 +1,15 @@
 .team {
-  padding: 50px 0 100px;
+  padding: 50px;
   @include tablet {
     padding: 70px 0;
+  }
+  &__link {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--dark-color);
+    font-weight: 800;
+    padding: 5px;
   }
   &__item {
     text-align: center;
@@ -10,10 +18,7 @@
       position: relative;
       transition: transform 0.3s ease-in-out;
       &:hover {
-        transform: scale(1.05);
-        .team__item-title {
-          transform: scale(1.05);
-        }
+        transform: scaleY(1.05);
       }
     }
     &-title {
@@ -24,8 +29,8 @@
       background-color: var(--light-color);
       color: var(--dark-color);
       font-weight: 700;
-      padding: 20px 0;
-      font-size: 16px;
+      padding: 10px 0;
+      font-size: 14px;
     }
     &--name {
       margin: 0;

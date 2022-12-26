@@ -7,6 +7,9 @@
   @include sub-shadow;
   background-color: var(--light-color);
   z-index: 15;
+  @include mobile {
+    padding: 5px 0;
+  }
   &__container {
     @include flex-all-sb;
   }
@@ -184,13 +187,6 @@
     &-link {
       color: white;
       color: var(--dark-color);
-      @include tablet {
-        color: var(--light-color);
-        background-color: var(--accent-color);
-        border-radius: 25px;
-        padding: 12px;
-        font-size: 16px;
-      }
     }
   }
 }

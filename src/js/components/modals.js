@@ -13,7 +13,7 @@ function openModal() {
     btn.addEventListener("click", () => {
       //Выведение активной картинки
       const activeImage = btn.closest("div[title]").title;
-      const activeText = `${".popup__text"}-${activeImage}`;
+      // const activeText = `${popupText}-${activeImage}`;
       img.src = `${BASE_URL}img/${activeImage}.avif`;
       // //Выведение активного тайтла
       // title.innerHTML = activeImage;
