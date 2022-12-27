@@ -9,6 +9,8 @@
     gap: 30px;
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      margin: 0 auto;
     }
     @include mobile {
       width: 100%;

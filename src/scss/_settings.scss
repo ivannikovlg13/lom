@@ -127,6 +127,9 @@ a {
   &--center {
     color: var(--dark-color);
     text-align: center;
+    @include tablet {
+      font-size: 23px;
+    }
   }
   &--popup {
     color: var(--dark-color);
@@ -143,6 +146,16 @@ a {
   @include small-tablet {
     font-size: 18px;
   }
+}
+.image-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  @include form-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

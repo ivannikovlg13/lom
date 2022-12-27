@@ -11,6 +11,10 @@ const swiper = new Swiper(".team__content", {
   breakpoints: {
     // when window width is >= 480px
     576: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
       slidesPerView: 3,
       spaceBetween: 30,
     },

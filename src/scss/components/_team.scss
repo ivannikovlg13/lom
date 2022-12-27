@@ -1,7 +1,8 @@
 .team {
-  padding: 50px;
+  padding: 50px 0 70px;
+  box-shadow: 5px -3px 14px 0px rgb(17 15 11 / 10%);
   @include tablet {
-    padding: 70px 0;
+    padding: 50px 0 70px;
   }
   &__link {
     position: absolute;
@@ -30,7 +31,7 @@
       color: var(--dark-color);
       font-weight: 700;
       padding: 10px 0;
-      font-size: 14px;
+      font-size: 16px;
     }
     &--name {
       margin: 0;
@@ -69,6 +70,9 @@
     justify-content: center;
     width: 100vw;
     left: 0;
+    @include tablet {
+      margin-top: 28px;
+    }
   }
   &__slider-btn {
     @include bg-cover;

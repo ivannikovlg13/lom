@@ -357,6 +357,10 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team__conten
   breakpoints: {
     // when window width is >= 480px
     576: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
       slidesPerView: 3,
       spaceBetween: 30
     }

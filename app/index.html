@@ -473,12 +473,14 @@
     alt="weight"
   />
   <h1 class="main-title--light main-title--center price__title">Прайс 2023</h1>
+
   <p class="main-subtitle main-subtitle--center">
     Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
     <span class="price__subtitle"
       >(Ціни вказані від 100 кг даного металобрухту)</span
     >
   </p>
+
   <div class="accordion">
     <div class="accordion__item accordion__item-active">
       <div class="accordion__item-trigger">
@@ -668,8 +670,9 @@
       Популярні статті цього року
     </h1>
     <p class="main-subtitle main-subtitle--center">
-      Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
+      Список найцікавіших статей,які можливо вас зацікавлять.
     </p>
+
     <div class="swiper team__content">
       <a href="#" class="team__link">Подивитись усi статті</a>
       <div class="swiper-wrapper">
@@ -775,37 +778,37 @@
 
         <section class="benefits">
   <div class="container">
-    <h1 class="benefits__title">НАШІ ДОСЯГНЕННЯ</h1>
-    <p class="main-subtitle benefits__subtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, imperdiet
-      mauris nunc viverra ultrices. Donec
-    </p>
+    <h1 class="main-title--center">НАШІ ДОСЯГНЕННЯ</h1>
     <div class="benefits__items">
       <div class="benefits__item">
-        <img
-          loading="lazy"
-          src="img/clock.svg"
-          class="image benefits__img"
-          width="70px"
-          height="70px"
-          alt="lock-image"
-        />
+        <div class="image-wrapper">
+          <img
+            loading="lazy"
+            src="img/clock.svg"
+            class="image benefits__img"
+            width="70px"
+            height="70px"
+            alt="lock-image"
+          />
+        </div>
         <h5 class="benefits__item--title">8 рокiв на ринку</h5>
-        <a href="#" class="benefits__item--title">Читати далi</a>
         <p class="benefits__item--text">
           At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
           eripuit mentitum.
         </p>
       </div>
       <div class="benefits__item">
-        <img
-          loading="lazy"
-          src="img/dollar.svg"
-          class="image benefits__img"
-          width="70px"
-          height="70px"
-          alt="dollar-image"
-        />
+        <div class="image-wrapper">
+          <img
+            loading="lazy"
+            src="img/dollar.svg"
+            class="image benefits__img"
+            width="70px"
+            height="70px"
+            alt="dollar-image"
+          />
+        </div>
+
         <h5 class="benefits__item--title">Найвигідніші ціни</h5>
         <p class="benefits__item--text">
           At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
@@ -813,36 +816,35 @@
         </p>
       </div>
       <div class="benefits__item">
-        <img
-          loading="lazy"
-          src="img/clients.svg"
-          class="image benefits__img"
-          width="70px"
-          height="70px"
-          alt="cubic-image"
-        />
-        <h5 class="benefits__item--title">30000+ КЛІЄНТІВ</h5>
+        <div class="image-wrapper">
+          <img
+            loading="lazy"
+            src="img/clients.svg"
+            class="image benefits__img"
+            width="70px"
+            height="70px"
+            alt="cubic-image"
+          />
+        </div>
+        <h5 class="benefits__item--title">30000+ Клієнтів</h5>
         <p class="benefits__item--text">
           At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
           eripuit mentitum.
         </p>
       </div>
       <div class="benefits__item">
-        <img
-          loading="lazy"
-          src="img/cart.svg"
-          class="image benefits__img"
-          width="70px"
-          height="70px"
-          alt="clock-image"
-        />
-        <h5 class="benefits__item--title">
-          650000+ М³ ПОБУТОВИХ ВІДХОДІВ УТИЛІЗУВАЛИ
-        </h5>
-        <p class="benefits__item--text">
-          At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
-          eripuit mentitum.
-        </p>
+        <div class="image-wrapper">
+          <img
+            loading="lazy"
+            src="img/cart.svg"
+            class="image benefits__img"
+            width="70px"
+            height="70px"
+            alt="clock-image"
+          />
+        </div>
+        <h5 class="benefits__item--title">Утилізували</h5>
+        <p class="benefits__item--text">740000+ М³ Побутовіх Відходів</p>
       </div>
     </div>
   </div>
@@ -905,72 +907,236 @@
   <div class="container">
     <div class="footer__links">
       <ul class="footer__list list-reset">
-          ТОВ Схiд-Лом
-        <li class="footer__list--item"><a href="#"><svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#request"></use>
-        </svg>Залишити заявку</a></li>
-        <li class="footer__list--item"><a href="#">
-          <svg class="footer__image image">
-            <use xlink:href="img/sprite.svg#price"></use>
-          </svg>Прайс</a></li>
-        <li class="footer__list--item"><a href="#"><svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#company"></use>
-        </svg>Про компанiю</a></li>
-        <li class="footer__list--item"><a href="#">
-          <svg class="footer__image image">
-            <use xlink:href="img/sprite.svg#location"></use>
-          </svg>Адреси</a></li>
-        <li class="footer__list--item"><a href="#"><svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#article"></use>
-        </svg>Усi статті</a></li>
-        <li class="footer__list--item"><a href="#">
-          <svg class="footer__image image">
-            <use xlink:href="img/sprite.svg#question"></use>
-          </svg>Основнi запитання</a></li>
+        ТОВ Схiд-Лом
+        <li class="footer__list--item">
+          <a href="#"
+            ><div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#request"></use>
+              </svg>
+            </div>
+            Залишити заявку
+          </a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#price"></use>
+              </svg>
+            </div>
+
+            Прайс
+          </a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#company"></use>
+              </svg>
+            </div>
+            Про компанiю
+          </a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#location"></use>
+              </svg>
+            </div>
+            Адреси
+          </a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#article"></use>
+              </svg>
+            </div>
+            Усi статті
+          </a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#question"></use>
+              </svg>
+            </div>
+            Основнi запитання
+          </a>
+        </li>
       </ul>
       <ul class="footer__list list-reset">
-        Основні позиції 
-        <li class="footer__list--item"><a href="#">Мiдь</a></li>
-        <li class="footer__list--item"><a href="#">Алюмiнiй</a></li>
-        <li class="footer__list--item"><a href="#">Латунь</a></li>
-        <li class="footer__list--item"><a href="#">Нержавiюча сталь</a></li>
-        <li class="footer__list--item"><a href="#">Брухт кабелю</a></li>
-        <li class="footer__list--item"><a href="#">Електронний брухт</a></li>
-        <li class="footer__list--item"><a href="#">Електродвигуни б/в</a></li>
-        <li class="footer__list--item"><a href="#">Автоаккумулятори б/в</a></li>
+        Основні позиції
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#copper"></use>
+              </svg>
+            </div>
+            Мiдь</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#aluminum"></use>
+              </svg>
+            </div>
+            Алюміній</a
+          >
+        </li>
+
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#latun"></use>
+              </svg>
+            </div>
+            Латунь</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#steel"></use>
+              </svg>
+            </div>
+            Нержавiюча сталь</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#cable"></use>
+              </svg>
+            </div>
+            Брухт кабелю</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#mplata"></use>
+              </svg>
+            </div>
+            Електронний брухт</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#elmotor"></use>
+              </svg>
+            </div>
+            Електродвигуни б/в</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#elaccum"></use>
+              </svg>
+            </div>
+            Автоаккумулятори б/в</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#another"></use>
+              </svg>
+            </div>
+            Інші види брухту</a
+          >
+        </li>
       </ul>
       <ul class="footer__list list-reset">
         Контакти
-        <li class="footer__list--item"><a class="header__info-link" href="tel:+380955392000"
-          >          <svg class="footer__image image">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>(м.Дніпро)</a</li>
-        <li class="footer__list--item"><a class="header__info-link" href="tel:+380689608138"
-          >          <svg class="footer__image image">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>(м.Київ)</a</li>
-        
-        <li class="footer__list--item"><a href="https://t.me/semen1555">        
-          <svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#telegram"></use>
-        </svg>(м.Дніпро)</a>
-      </li>
         <li class="footer__list--item">
-          <a href="#">          
-            <svg class="footer__image image">
-              <use xlink:href="img/sprite.svg#telegram"></use>
-            </svg>(м.Київ)
+          <a class="header__info-link" href="tel:+380955392000">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            (м.Дніпро)</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a class="header__info-link" href="tel:+380689608138">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            (м.Київ)
           </a>
         </li>
-        <li class="footer__list--item"><a href="#">        <svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#viber"></use>
-        </svg>м.Дніпро)</a></li>
-        <li class="footer__list--item"><a href="#">        <svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#viber"></use>
-        </svg>(м.Київ)</a></li>
-        <li class="footer__list--item"><a href="mailto:serg@gmail.com"><svg class="footer__image image">
-          <use xlink:href="img/sprite.svg#mail"></use>
-        </svg>serg@gmail.com</a></li>
+
+        <li class="footer__list--item">
+          <a href="https://t.me/semen1555">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </div>
+            (м.Дніпро)</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </div>
+            (м.Київ)
+          </a>
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#viber"></use>
+              </svg>
+            </div>
+            (м.Дніпро)</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="#">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#viber"></use>
+              </svg>
+            </div>
+            (м.Київ)</a
+          >
+        </li>
+        <li class="footer__list--item">
+          <a href="mailto:serg@gmail.com">
+            <div class="image-wrapper footer__image-wrapper">
+              <svg class="footer__image image">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </div>
+            serg@gmail.com
+          </a>
+        </li>
       </ul>
     </div>
     <div class="footer__bottom">
