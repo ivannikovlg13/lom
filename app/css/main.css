@@ -386,6 +386,7 @@ a {
   padding-top: 30px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 1024px) {
   .header__item--withmenu .submenu {
@@ -1022,7 +1023,6 @@ button:active {
 }
 @media (max-width: 576px) {
   .offers__items {
-    width: 100%;
     margin: 0 auto;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1636,6 +1636,11 @@ button:active {
   border-radius: 10px;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .accordion .accordion__item .accordion__item-content .content__text {
+    padding: 0 10px;
+  }
+}
 .accordion .accordion__item .accordion__item-content .content__text:first-child {
   margin-top: 0;
 }
@@ -1643,7 +1648,7 @@ button:active {
   color: var(--light-color);
   background: black;
   padding: 10px 10px;
-  border-radius: 5px;
+  border-radius: 25px;
   font-weight: 700;
 }
 .accordion .accordion__item .accordion__item-content .content__price-currency {
@@ -2124,5 +2129,28 @@ button:active {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+}
+
+.hide {
+  display: none;
+}
+
+.readmore-btn {
+  background-color: transparent;
+  color: var(--dark-color);
+  font-weight: 800;
+  font-size: 14px;
+  padding: 0;
+}
+
+.dots {
+  color: var(--dark-color);
+  margin-left: 5px;
+}
+
+.dots,
+.more {
+  -webkit-animation: fade 0.5s ease-in-out;
+  animation: fade 0.5s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

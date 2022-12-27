@@ -148,6 +148,9 @@
         align-items: center;
         border-radius: 10px;
         font-weight: 700;
+        @include mobile {
+          padding: 0 10px;
+        }
 
         &:first-child {
           margin-top: 0;
@@ -157,7 +160,7 @@
         color: var(--light-color);
         background: black;
         padding: 10px 10px;
-        border-radius: 5px;
+        border-radius: 25px;
         font-weight: 700;
         &-currency {
           margin-left: 5px;

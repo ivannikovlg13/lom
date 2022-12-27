@@ -226,6 +226,7 @@
             забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
             забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
+          <button onclick="readMore(this)">Читати далі</button>
         </div>
         <button id="offers__btn" class="offers__btn" data-graph-path="popup">
           <span class="offers__btn--text">Докладніше</span>
@@ -259,6 +260,9 @@
             важкого металу, перевагою якого є хороша електропровідність та
             теплопровідність.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
         <button id="offers__btn" class="offers__btn" data-graph-path="popup">
           <span class="offers__btn--text">Докладніше</span>
@@ -461,6 +465,16 @@
     </div>
   </div>
 </section>
+<script>
+  function readMore(btn) {
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "Скрити текст"
+      ? (btn.textContent = "Читати далі")
+      : (btn.textContent = "Скрити текст");
+  }
+</script>
 
         <!-- Accordion -->
 <section class="price" id="price">
