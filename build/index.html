@@ -23,20 +23,19 @@
         loading="lazy"
         src="img/svg/logo.svg"
         class="image"
-        width="50px"
-        height="50px"
+        width="40px"
+        height="40px"
         alt="logo"
       />
       <span class="header__nav-name">Лом</span>
     </a>
 
-    <nav class="nav header__nav" title="Main Menu" data-menu>
+    <nav class="nav header__nav" title="Меню" data-menu>
       <ul class="nav__list list-reset header__list">
         <li class="nav__item header__item--withmenu">
           <a
             href="#"
             class="nav__link header__link header__link--withmenu"
-            title="Products and Services"
             data-menu-item
             data-scroll
             >БРУХТ КОЛЬОРОВИХ МЕТАЛІВ
@@ -67,7 +66,7 @@
         <li class="nav__item">
           <a
             href="#price"
-            class="nav__link header__link"
+            class="nav__link header__link header__link-price"
             title="Blog and News"
             data-menu-item
             data-scroll
@@ -76,9 +75,9 @@
         </li>
         <li class="nav__item">
           <a
-            href="#news"
+            href="../about.html"
             class="nav__link header__link"
-            title="Blog and News"
+            title="Про компанiю"
             data-menu-item
             data-scroll
             >Про компанiю</a
@@ -86,9 +85,9 @@
         </li>
         <li class="nav__item nav__item-mobile">
           <a
-            href="#news"
+            href="./location.html"
             class="nav__link header__link"
-            title="Blog and News"
+            title="Контакти"
             data-menu-item
             data-scroll
             >Контакти</a
@@ -96,11 +95,11 @@
         </li>
       </ul>
       <div class="header__info">
-        <a class="header__info-link" href="tel:+380955392000"
-          >+380955392000(м.Дніпро)</a
-        >
-        <a class="header__info-link" href="tel:+380689608138"
-          >+380689608138(м.Київ)</a
+        <a class="header__info-link" href="tel:+380955392000">
+          <svg class="header__image footer__image image">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +380955392000</a
         >
       </div>
     </nav>
@@ -120,77 +119,22 @@
       <main class="main">
         <section class="order" id="order">
   <div class="container order__container">
-    <div class="order__left">
-      <h2 class="order__title">ПРИЙОМ КОЛЬОРОВОГО МЕТАЛОБРУХТУ</h2>
-      <img src="./img/hero.jpeg" class="order__hero-img" alt="hero" />
-    </div>
-    <div class="order__right">
-      <form action="#" id="tg" class="form order__form">
-        <img
-          loading="lazy"
-          src="./img/svg/car.svg"
-          class="form__img"
-          width="50px"
-          height="50px"
-          alt="car"
-        />
-        <h1 class="form__title">Залишити заявку на вивiз</h1>
-        <label class="form__label">
-          <input
-            type="text"
-            name="metall"
-            class="input-reset form__input"
-            placeholder="Назва металлу"
-          />
-        </label>
-        <label class="form__label">
-          <input
-            type="number"
-            name="weight"
-            class="input-reset form__input"
-            placeholder="Приблизна вага"
-          />
-        </label>
-        <label class="form__label">
-          <input
-            type="text"
-            name="name"
-            class="input-reset form__input input-name"
-            placeholder="Им'я"
-            required
-          />
-        </label>
-        <label class="form__label">
-          <input
-            type="tel"
-            name="phone"
-            class="input-reset form__input input-tel"
-            placeholder="Телефон"
-            required
-          />
-        </label>
-        <div class="form__cities">
-          <div class="form__radios">
-            <input
-              class="checkbox"
-              type="radio"
-              name="form"
-              value="Київ"
-              checked
-            />
+    <div class="order__item">
+      <img
+        loading="lazy"
+        src="./img/bg.jpg"
+        class="image order__img"
+        width="750px"
+        alt="hero"
+      />
+      <div class="order__content">
+        <h2 class="order__title">Прийом кольорового металобрухту у Дніпрі</h2>
 
-            <label for="Kyiv" class="form__checkbox-name">Київ</label>
-          </div>
-          <div class="form__radios">
-            <input class="checkbox" type="radio" name="form" value="Дніпро" />
-
-            <label for="Dnipro" class="form__checkbox-name">Дніпро</label>
-          </div>
-        </div>
-        <button class="btn-reset btn btn--accent form__btn">
-          Оформить заявку
-        </button>
-      </form>
+        <h4 class="main-subtitle order__subtitle">
+          Залишити заявку на вивіз брухту
+        </h4>
+        <a href="./form.html" class="btn order__btn">Залишити заявку</a>
+      </div>
     </div>
   </div>
 </section>
@@ -203,7 +147,7 @@
       Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
     </p>
     <div class="offers__items">
-      <div class="offers__item" title="alum">
+      <div class="offers__item">
         <picture>
           <source srcset="img/alum.jpeg" type="image/avif" />
           <source srcset="img/alum.jpeg" type="image/webp" />
@@ -226,16 +170,23 @@
             забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
             забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button onclick="readMore(this)">Читати далі</button>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="med">
+      <div class="offers__item">
         <picture>
           <source srcset="img/med.jpeg" type="image/avif" />
           <source srcset="img/med.jpeg" type="image/webp" />
@@ -264,14 +215,19 @@
             Читати далі
           </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="latun">
+      <div class="offers__item">
         <picture>
           <source srcset="img/latun.jpeg" type="image/avif" />
           <source srcset="img/latun.jpeg" type="image/webp" />
@@ -294,15 +250,23 @@
             деталями, що лежать без діла. Не втрачайте шанс гарненько
             підзаробити і дати металу друге життя.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="nerj">
+      <div class="offers__item">
         <picture>
           <source srcset="img/nerj.jpeg" type="image/avif" />
           <source srcset="img/nerj.jpeg" type="image/webp" />
@@ -326,15 +290,23 @@
             найвигіднішою винагородою для Вас.Найвигідніша утилізація
             нержавіючої сталі у Києві та Дніпрі у нас.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text"> Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="kabel">
+      <div class="offers__item">
         <picture>
           <source srcset="img/kabel.jpeg" type="image/avif" />
           <source srcset="img/kabel.jpeg" type="image/webp" />
@@ -358,15 +330,23 @@
             визначать склад даного продукту та його вагу.І чесно розрахуються за
             кожен грам продукції.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="plata">
+      <div class="offers__item">
         <picture>
           <source srcset="img/plata.jpeg" type="image/avif" />
           <source srcset="img/plata.jpeg" type="image/webp" />
@@ -390,15 +370,23 @@
             Такие платы входят в состав различных устройств. В неликвидных
             деталях содержатся драгметаллы.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text"> Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="motor">
+      <div class="offers__item">
         <picture>
           <source srcset="img/motor.jpeg" type="image/avif" />
           <source srcset="img/motor.jpeg" type="image/webp" />
@@ -422,25 +410,33 @@
             конструкції цих пристроїв є деталі із кольорових та чорних металів,
             на продажу яких можна заробити солідну суму.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
-          <span class="offers__btn--text"> Докладніше</span>
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
+          <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="auto-accum2">
+      <div class="offers__item">
         <picture>
-          <source srcset="img/auto-accum2.jpeg" type="image/avif" />
-          <source srcset="img/auto-accum2.jpeg" type="image/webp" />
+          <source srcset="img/accum.jpeg" type="image/avif" />
+          <source srcset="img/accum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/auto-accum .jpeg"
+            src="img/accum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="auto-accum2"
+            alt="accumulator"
           />
         </picture>
         <div class="offers__inner">
@@ -454,8 +450,16 @@
             конструкції цих пристроїв є деталі із кольорових та чорних металів,
             на продажу яких можна заробити солідну суму.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
@@ -474,6 +478,15 @@
       ? (btn.textContent = "Читати далі")
       : (btn.textContent = "Скрити текст");
   }
+  function activeItem(btn) {
+    let popupImage = document.querySelector("#popup__image");
+    let popupTitle = document.querySelector(".popup__title");
+    let item = btn.parentElement;
+    let img = item.querySelector(".offers__img");
+    let title = item.querySelector(".offers__title");
+    popupImage.src = img.src;
+    popupTitle.innerHTML = title.innerHTML;
+  }
 </script>
 
         <!-- Accordion -->
@@ -491,18 +504,20 @@
   <p class="main-subtitle main-subtitle--center">
     Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
     <span class="price__subtitle"
-      >(Ціни вказані від 100 кг даного металобрухту)</span
+      >(Ціни вказані від 300 кг даного металобрухту)</span
     >
   </p>
-
   <div class="accordion">
     <div class="accordion__item accordion__item-active">
       <div class="accordion__item-trigger">
         <div class="trigger__num">1.</div>
         <div class="trigger__text">Мiдь</div>
         <div class="trigger__img">
-          <span class="line1"></span>
-          <span class="line2"></span>
+          <div class="trigger__circle">
+            <svg class="accordion__item-arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="accordion__item-content">
@@ -522,9 +537,13 @@
       <div class="accordion__item-trigger">
         <div class="trigger__num">2.</div>
         <div class="trigger__text">Латунь</div>
+
         <div class="trigger__img">
-          <span class="line1"></span>
-          <span class="line2"></span>
+          <div class="trigger__circle">
+            <svg class="accordion__item-arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="accordion__item-content">
@@ -552,8 +571,11 @@
         <div class="trigger__num">3.</div>
         <div class="trigger__text">Алюміній</div>
         <div class="trigger__img">
-          <span class="line1"></span>
-          <span class="line2"></span>
+          <div class="trigger__circle">
+            <svg class="accordion__item-arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="accordion__item-content">
@@ -598,8 +620,11 @@
         <div class="trigger__num">4.</div>
         <div class="trigger__text">Нержавіюча сталь</div>
         <div class="trigger__img">
-          <span class="line1"></span>
-          <span class="line2"></span>
+          <div class="trigger__circle">
+            <svg class="accordion__item-arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="accordion__item-content">
@@ -620,8 +645,11 @@
         <div class="trigger__num">5.</div>
         <div class="trigger__text">Свинцевi</div>
         <div class="trigger__img">
-          <span class="line1"></span>
-          <span class="line2"></span>
+          <div class="trigger__circle">
+            <svg class="accordion__item-arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="accordion__item-content">
@@ -657,8 +685,11 @@
         <div class="trigger__num">6.</div>
         <div class="trigger__text">Інше</div>
         <div class="trigger__img">
-          <span class="line1"></span>
-          <span class="line2"></span>
+          <div class="trigger__circle">
+            <svg class="accordion__item-arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="accordion__item-content">
@@ -688,10 +719,10 @@
     </p>
 
     <div class="swiper team__content">
-      <a href="#" class="team__link">Подивитись усi статті</a>
+      <a href="../reviews.html" class="team__link">Подивитись усi статті</a>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <a href="#" class="team__item">
+          <a href="./reviews.html#reviews-one" class="team__item">
             <h5 class="team__item-title">
               ТОП 10 стран по производству меди 2022
             </h5>
@@ -708,7 +739,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a href="#" class="team__item">
+          <a href="./reviews.html#reviews-two" class="team__item">
             <h5 class="team__item-title">
               ТОП 10 стран по производству меди 2022
             </h5>
@@ -725,7 +756,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a href="#" class="team__item">
+          <a href="./reviews.html#reviews-three" class="team__item">
             <h5 class="team__item-title">
               ТОП 10 стран по производству меди 2022
             </h5>
@@ -742,7 +773,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a href="#" class="team__item">
+          <a href="./reviews.html#reviews-four" class="team__item">
             <h5 class="team__item-title">
               ТОП 10 стран по производству меди 2022
             </h5>
@@ -759,7 +790,7 @@
           </a>
         </div>
         <div class="swiper-slide">
-          <a href="#" class="team__item">
+          <a href="./reviews.html#reviews-five" class="team__item">
             <h5 class="team__item-title">
               ТОП 10 стран по производству меди 2022
             </h5>
@@ -806,9 +837,9 @@
           />
         </div>
         <h5 class="benefits__item--title">8 рокiв на ринку</h5>
-        <p class="benefits__item--text">
-          At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
-          eripuit mentitum.
+        <p class="item-text">
+          Наш досвід дає клієнтам гарну співпрацю на довги роки.З вами завжди
+          можливо домовитися.
         </p>
       </div>
       <div class="benefits__item">
@@ -824,9 +855,9 @@
         </div>
 
         <h5 class="benefits__item--title">Найвигідніші ціни</h5>
-        <p class="benefits__item--text">
-          At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
-          eripuit mentitum.
+        <p class="item-text">
+          Ми впевнені,що є лідарами цін в Дніпрі та області,в сфері прийому
+          металобрухту.
         </p>
       </div>
       <div class="benefits__item">
@@ -841,9 +872,9 @@
           />
         </div>
         <h5 class="benefits__item--title">30000+ Клієнтів</h5>
-        <p class="benefits__item--text">
-          At nam minimum ponderum. Est audiam animal molestiae te. Ex duo
-          eripuit mentitum.
+        <p class="item-text">
+          Відсоток людей,які навздалегіть становляться нашими постійнімі
+          клієнтами,більше 90%.
         </p>
       </div>
       <div class="benefits__item">
@@ -858,59 +889,10 @@
           />
         </div>
         <h5 class="benefits__item--title">Утилізували</h5>
-        <p class="benefits__item--text">740000+ М³ Побутовіх Відходів</p>
-      </div>
-    </div>
-  </div>
-</section>
- <section class="information">
-  <div class="container">
-    <div class="accordion">
-      <div class="accordion__item accordion__item-active">
-        <div class="accordion__item-trigger">
-          <div class="trigger__text">Як здати металобрухт у Запоріжжі?</div>
-          <div class="trigger__img">
-            <span class="line1"></span>
-            <span class="line2"></span>
-          </div>
-        </div>
-        <div class="accordion__item-content">
-          Щоб здати брухт у Запоріжжі, потрібно зв’язатися з менеджерами нашої
-          компанії. Ми оперативно приймемо замовлення, обумовивши умови,
-          призначимо дату. Здавання великої кількості брухту пов’язане з
-          необхідністю залучення вантажного транспорту або спеціальної вантажної
-          техніки. Іноді для спрощення транспортування великогабаритних відходів
-          потрібні послуги різьбяра. Звертаючись за допомогою до професіоналів,
-          ви отримуєте весь спектр послуг. Нашим клієнтам не потрібно думати, як
-          здати брухт у Запоріжжі, адже ми готові зробити це за них. При цьому
-          неважливо, як далеко ви розташовані від нашої бази, ми вивеземо всі
-          необхідні відходи. Часто при великих обсягах металобрухту самовивіз
-          виявляється безкоштовним. Здача відходів до пункту прийому
-          металобрухту в Запоріжжі здійснюється в наступній послідовності:
-        </div>
-      </div>
-      <div class="accordion__item">
-        <div class="accordion__item-trigger">
-          <div class="trigger__text">Як здати металобрухт у Запоріжжі?</div>
-          <div class="trigger__img">
-            <span class="line1"></span>
-            <span class="line2"></span>
-          </div>
-        </div>
-        <div class="accordion__item-content">
-          Щоб здати брухт у Запоріжжі, потрібно зв’язатися з менеджерами нашої
-          компанії. Ми оперативно приймемо замовлення, обумовивши умови,
-          призначимо дату. Здавання великої кількості брухту пов’язане з
-          необхідністю залучення вантажного транспорту або спеціальної вантажної
-          техніки. Іноді для спрощення транспортування великогабаритних відходів
-          потрібні послуги різьбяра. Звертаючись за допомогою до професіоналів,
-          ви отримуєте весь спектр послуг. Нашим клієнтам не потрібно думати, як
-          здати брухт у Запоріжжі, адже ми готові зробити це за них. При цьому
-          неважливо, як далеко ви розташовані від нашої бази, ми вивеземо всі
-          необхідні відходи. Часто при великих обсягах металобрухту самовивіз
-          виявляється безкоштовним. Здача відходів до пункту прийому
-          металобрухту в Запоріжжі здійснюється в наступній послідовності:
-        </div>
+        <p class="item-text">
+          У 2022 році приблизно 740000+ М³ Побутовіх Відходів Дніпрі та
+          Дніпровській області.
+        </p>
       </div>
     </div>
   </div>
@@ -923,7 +905,7 @@
       <ul class="footer__list list-reset">
         ТОВ Схiд-Лом
         <li class="footer__list--item">
-          <a href="#"
+          <a href="./form.html" class="footer__list-link"
             ><div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#request"></use>
@@ -933,18 +915,17 @@
           </a>
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="../index.html#price" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#price"></use>
               </svg>
             </div>
-
             Прайс
           </a>
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="../about.html" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#company"></use>
@@ -954,17 +935,17 @@
           </a>
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="../location.html" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#location"></use>
               </svg>
             </div>
-            Адреси
+            Адреса
           </a>
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="../reviews.html" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#article"></use>
@@ -974,7 +955,7 @@
           </a>
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="../questions.html" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#question"></use>
@@ -985,9 +966,9 @@
         </li>
       </ul>
       <ul class="footer__list list-reset">
-        Основні позиції
+        Основной брухт
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#copper"></use>
@@ -997,7 +978,7 @@
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#aluminum"></use>
@@ -1008,7 +989,7 @@
         </li>
 
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#latun"></use>
@@ -1018,7 +999,7 @@
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#steel"></use>
@@ -1027,8 +1008,11 @@
             Нержавiюча сталь</a
           >
         </li>
+      </ul>
+      <ul class="footer__list list-reset">
+        Брухт
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#cable"></use>
@@ -1038,7 +1022,7 @@
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#mplata"></use>
@@ -1048,7 +1032,7 @@
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#elmotor"></use>
@@ -1058,7 +1042,7 @@
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#elaccum"></use>
@@ -1068,7 +1052,7 @@
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#another"></use>
@@ -1081,74 +1065,46 @@
       <ul class="footer__list list-reset">
         Контакти
         <li class="footer__list--item">
-          <a class="header__info-link" href="tel:+380955392000">
+          <a
+            class="header__info-link footer__list-link"
+            href="tel:+380955392000"
+          >
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
             </div>
-            (м.Дніпро)</a
+            Дзвінок</a
           >
         </li>
         <li class="footer__list--item">
-          <a class="header__info-link" href="tel:+380689608138">
-            <div class="image-wrapper footer__image-wrapper">
-              <svg class="footer__image image">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>
-            </div>
-            (м.Київ)
-          </a>
-        </li>
-
-        <li class="footer__list--item">
-          <a href="https://t.me/semen1555">
+          <a href="https://t.me/semen1555" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#telegram"></use>
               </svg>
             </div>
-            (м.Дніпро)</a
+            Telegram</a
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
-            <div class="image-wrapper footer__image-wrapper">
-              <svg class="footer__image image">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </div>
-            (м.Київ)
-          </a>
-        </li>
-        <li class="footer__list--item">
-          <a href="#">
+          <a href="#" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#viber"></use>
               </svg>
             </div>
-            (м.Дніпро)</a
+            Viber</a
           >
         </li>
         <li class="footer__list--item">
-          <a href="#">
-            <div class="image-wrapper footer__image-wrapper">
-              <svg class="footer__image image">
-                <use xlink:href="img/sprite.svg#viber"></use>
-              </svg>
-            </div>
-            (м.Київ)</a
-          >
-        </li>
-        <li class="footer__list--item">
-          <a href="mailto:serg@gmail.com">
+          <a href="mailto:golovin_86@ukr.net" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
             </div>
-            serg@gmail.com
+            Пошта
           </a>
         </li>
       </ul>
@@ -1203,7 +1159,7 @@
       <img src="img/close.svg" alt="close-picture" />
     </button>
     <div class="graph-modal__content">
-      <h1 class="main-title--name"></h1>
+      <h1 class="popup__title"></h1>
       <div class="popup__top">
         <div class="popup__image">
           <picture>
@@ -1214,44 +1170,9 @@
               class="image"
               width="100%"
               height="250px"
-              alt="med"
+              alt="metall"
             />
           </picture>
-        </div>
-        <div class="popup__links">
-          <a href="https://t.me/semen1555" class="popup__link">
-            <span class="popup__link-text">м.Дніпро</span>
-            <img
-              loading="lazy"
-              src="./img/svg/telegram.svg"
-              class="popup__image-link"
-              width="40px"
-              height="auto"
-              alt="send"
-            />
-          </a>          
-          <a href="#" class="popup__link">
-            <span class="popup__link-text">м.Київ</span>
-            <img
-              loading="lazy"
-              src="./img/svg/telegram.svg"
-              class="popup__image-link"
-              width="40px"
-              height="auto"
-              alt="send"
-            />
-          </a>
-          <a href="tel:+380955392000" class="popup__link">
-            <span class="popup__link-text">Дзвiнок</span>
-            <img
-              loading="lazy"
-              src="./img/svg/phone.svg"
-              class="popup__image-link"
-              width="40px"
-              height="auto"
-              alt="phone"
-            />
-          </a>
         </div>
       </div>
       <div class="popup__bottom">
@@ -1266,12 +1187,12 @@
               </li>
               <li class="tabs__nav-item">
                 <button class="tabs__nav-btn btn-reset" type="button">
-                  Види алюмінію
+                  Постачальникам брухту
                 </button>
               </li>
               <li class="tabs__nav-item">
                 <button class="tabs__nav-btn btn-reset" type="button">
-                  Плюси
+                  Постійним клієнтам
                 </button>
               </li>
             </ul>
@@ -1283,7 +1204,7 @@
                   <h3 class="popup__subtitle">
                     Ціни на прийом у Києві та Дніпрі
                   </h3>
-                  <p class="popup__text-alum">
+                  <p class="popup__text">
                       Вартість вторинної сировини залежить не тільки від її
                       виду та якості, а й від політики конкретного пункту прийому.
                       Ціна за кг в одній організації відрізнятиметься від вартості

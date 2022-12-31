@@ -1,0 +1,26 @@
+.reviews {
+  padding: 100px 0 50px;
+  @include sub-shadow;
+  @include tablet {
+    border-bottom: 1px solid var(--light-color);
+  }
+  @include mobile {
+    padding: 100px 0 50px;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 50px;
+
+    &-img {
+      margin-right: 30px;
+      height: 200px;
+      @include shadow;
+      border-radius: 10px;
+    }
+    &-title {
+      margin: 0;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+  }
+}

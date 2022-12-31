@@ -1,66 +1,47 @@
 .order {
-  padding: 150px 0 50px;
-  margin-bottom: 50px;
+  height: 800px;
+  position: relative;
   @include sub-shadow;
   @include tablet {
     padding: 120px 0 50px;
     border-bottom: 1px solid var(--light-color);
   }
   @include mobile {
+    height: 600px;
     padding: 100px 0 50px;
   }
-  &__hero {
-    &-img {
-      @include tablet {
-        width: 200px;
-        height: 200px;
-        object-fit: contain;
-        margin: 0 auto;
-      }
-      @include mobile {
-        width: 100px;
-        height: 100px;
-      }
-    }
-  }
   &__container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    height: 100%;
+  }
+  &__img {
+    width: 500px;
+    border-bottom-left-radius: 25px;
     @include tablet {
-      display: block;
-      text-align: center;
+      margin-left: 211px;
+    }
+    @include mobile {
+      margin-left: 50px;
     }
   }
-  &__left {
-    grid-column: 5 span;
-    color: var(--light-color);
-    margin-left: 60px;
+  &__item {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     @include tablet {
-      padding-left: 0;
-      margin-bottom: 30px;
-      padding-bottom: 30px;
-      margin-left: 0;
-    }
-  }
-  &__right {
-    grid-column: 7 span;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 60px;
-    @include tablet {
-      padding-right: 0;
+      flex-direction: column-reverse;
       justify-content: center;
+      gap: 50px;
     }
   }
-  &__title,
-  &__descr {
+  &__content {
+    text-align: center;
+  }
+  &__title {
+    max-width: 500px;
     margin: 0;
     line-height: 130%;
-  }
-
-  &__title {
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 20px;
@@ -75,15 +56,23 @@
       font-size: 18px;
     }
   }
-  &__descr {
-    font-size: 20px;
-    color: var(--accent-color);
-    font-weight: 700;
-    @include small-tablet {
-      font-size: 16px;
-    }
-    @include mobile {
-      font-size: 14px;
-    }
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  &__btn {
+    animation: pulse 3s ease infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.05);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
   }
 }

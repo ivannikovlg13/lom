@@ -285,32 +285,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
 
 const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]();
-function openModal() {
-  const BASE_URL = "http://localhost:3000/";
-  const btns = document.querySelectorAll("#offers__btn");
-  const img = document.querySelector("#popup__image");
-  const title = document.querySelector(".main-title--name");
-  const closeBtn = document.querySelector(".graph-modal__close");
-  const popupText = document.querySelector(".popup__text");
-  btns.forEach(btn => btn.addEventListener("click", () => {
-    //Выведение активной картинки
-    const activeImage = btn.closest("div[title]").title;
-    // const activeText = `${popupText}-${activeImage}`;
-    img.src = `${BASE_URL}img/${activeImage}.avif`;
-    // //Выведение активного тайтла
-    // title.innerHTML = activeImage;
-    // //Выведение активного текста
-    // popupText.classList = activeText.replace(".", "");
-    // popupText.style.display = "block";
-    // console.log(activeText);
-  }));
-  // closeBtn?.addEventListener("click", () => {
-  //   title.classList = "main-title--name";
-  //   popupText.classList = "popup__text";
-  // });
-}
-
-openModal();
 
 /***/ }),
 

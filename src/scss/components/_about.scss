@@ -1,0 +1,47 @@
+.about {
+  padding: 100px 0 50px;
+  @include tablet {
+    border-bottom: 1px solid var(--light-color);
+  }
+  @include mobile {
+    padding: 100px 0 50px;
+  }
+  &__img {
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 80px;
+  }
+  &__circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include small-tablet {
+      display: block;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__list {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    &-item {
+      font-size: 16px;
+      color: var(--text-color);
+      margin-top: 30px;
+      text-transform: lowercase;
+      text-align: center;
+    }
+  }
+}

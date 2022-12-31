@@ -1,0 +1,35 @@
+.price {
+
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+  @include form-shadow;
+  padding: 20px 30px 40px;
+  border-radius: 10px;
+  @include tablet {
+    max-width: 500px;
+  }
+  &__title {
+    margin: 10px 0;
+  }
+  &__subtitle {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-top: 10px;
+    display: block;
+  }
+  &__info {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--light-color);
+    background: var(--dark-color);
+    border-radius: 25px;
+    padding: 15px;
+    @include tablet {
+      padding: 13px;
+      font-size: 16px;
+    }
+  }
+}

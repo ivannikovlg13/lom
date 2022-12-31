@@ -147,6 +147,17 @@ a {
     font-size: 18px;
   }
 }
+.item-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+  font-style: italic;
+  @include small-tablet {
+    font-size: 12px;
+  }
+}
 .image-wrapper {
   width: 50px;
   height: 50px;

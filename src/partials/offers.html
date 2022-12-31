@@ -7,7 +7,7 @@
       Пропонуємо подивитись основнi металопродукти,якi можливо вас зацiкавлять.
     </p>
     <div class="offers__items">
-      <div class="offers__item" title="alum">
+      <div class="offers__item">
         <picture>
           <source srcset="img/alum.jpeg" type="image/avif" />
           <source srcset="img/alum.jpeg" type="image/webp" />
@@ -30,16 +30,23 @@
             забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
             забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button onclick="readMore(this)">Читати далі</button>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="med">
+      <div class="offers__item">
         <picture>
           <source srcset="img/med.jpeg" type="image/avif" />
           <source srcset="img/med.jpeg" type="image/webp" />
@@ -68,14 +75,19 @@
             Читати далі
           </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="latun">
+      <div class="offers__item">
         <picture>
           <source srcset="img/latun.jpeg" type="image/avif" />
           <source srcset="img/latun.jpeg" type="image/webp" />
@@ -98,15 +110,23 @@
             деталями, що лежать без діла. Не втрачайте шанс гарненько
             підзаробити і дати металу друге життя.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="nerj">
+      <div class="offers__item">
         <picture>
           <source srcset="img/nerj.jpeg" type="image/avif" />
           <source srcset="img/nerj.jpeg" type="image/webp" />
@@ -130,15 +150,23 @@
             найвигіднішою винагородою для Вас.Найвигідніша утилізація
             нержавіючої сталі у Києві та Дніпрі у нас.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text"> Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="kabel">
+      <div class="offers__item">
         <picture>
           <source srcset="img/kabel.jpeg" type="image/avif" />
           <source srcset="img/kabel.jpeg" type="image/webp" />
@@ -162,15 +190,23 @@
             визначать склад даного продукту та його вагу.І чесно розрахуються за
             кожен грам продукції.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="plata">
+      <div class="offers__item">
         <picture>
           <source srcset="img/plata.jpeg" type="image/avif" />
           <source srcset="img/plata.jpeg" type="image/webp" />
@@ -194,15 +230,23 @@
             Такие платы входят в состав различных устройств. В неликвидных
             деталях содержатся драгметаллы.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text"> Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="motor">
+      <div class="offers__item">
         <picture>
           <source srcset="img/motor.jpeg" type="image/avif" />
           <source srcset="img/motor.jpeg" type="image/webp" />
@@ -226,25 +270,33 @@
             конструкції цих пристроїв є деталі із кольорових та чорних металів,
             на продажу яких можна заробити солідну суму.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
-          <span class="offers__btn--text"> Докладніше</span>
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
+          <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="offers__item" title="auto-accum2">
+      <div class="offers__item">
         <picture>
-          <source srcset="img/auto-accum2.jpeg" type="image/avif" />
-          <source srcset="img/auto-accum2.jpeg" type="image/webp" />
+          <source srcset="img/accum.jpeg" type="image/avif" />
+          <source srcset="img/accum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/auto-accum .jpeg"
+            src="img/accum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="auto-accum2"
+            alt="accumulator"
           />
         </picture>
         <div class="offers__inner">
@@ -258,8 +310,16 @@
             конструкції цих пристроїв є деталі із кольорових та чорних металів,
             на продажу яких можна заробити солідну суму.
           </p>
+          <button class="readmore-btn" onclick="readMore(this)">
+            Читати далі
+          </button>
         </div>
-        <button id="offers__btn" class="offers__btn" data-graph-path="popup">
+        <button
+          id="offers__btn"
+          class="offers__btn"
+          data-graph-path="popup"
+          onclick="activeItem(this)"
+        >
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
@@ -277,5 +337,14 @@
     btn.textContent == "Скрити текст"
       ? (btn.textContent = "Читати далі")
       : (btn.textContent = "Скрити текст");
+  }
+  function activeItem(btn) {
+    let popupImage = document.querySelector("#popup__image");
+    let popupTitle = document.querySelector(".popup__title");
+    let item = btn.parentElement;
+    let img = item.querySelector(".offers__img");
+    let title = item.querySelector(".offers__title");
+    popupImage.src = img.src;
+    popupTitle.innerHTML = title.innerHTML;
   }
 </script>

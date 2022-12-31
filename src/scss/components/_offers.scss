@@ -1,5 +1,5 @@
 .offers {
-  margin-bottom: 50px;
+  margin: 50px 0;
   @include small-tablet {
     padding: 50px 0;
   }
@@ -29,7 +29,7 @@
     margin-bottom: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 250px;
+    height: 220px;
     @include small-tablet {
       height: 200px;
     }
@@ -59,6 +59,7 @@
     line-height: 18px;
     text-transform: capitalize;
     color: var(--text-color);
+    font-style: italic;
     margin-bottom: 15px;
     @include small-tablet {
       font-size: 12px;

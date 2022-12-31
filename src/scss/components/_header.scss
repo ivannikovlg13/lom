@@ -46,13 +46,13 @@
     display: flex;
     gap: 60px;
     margin: 0 auto;
+    align-items: center;
     @include big-desktop {
       gap: 25px;
     }
     @include tablet {
       flex-direction: column-reverse;
       text-align: center;
-      border-top: 2px solid var(--accent-color);
     }
   }
   &__item {
@@ -94,7 +94,7 @@
             border-bottom-right-radius: 10px;
           }
           @include tablet {
-            background-color: transparent;
+            color: var(--dark-color);
           }
         }
         &__link {
@@ -114,8 +114,9 @@
             }
           }
           @include tablet {
-            color: var(--light-color);
             font-weight: 700;
+            color: var(--dark-color);
+            background-color: var(--light-color);
           }
         }
       }
@@ -128,8 +129,15 @@
     text-transform: uppercase;
     color: var(--dark-color);
     transition: color 0.3s ease-in-out;
-    @include tablet {
+    &-price {
+      font-weight: 800;
+      padding: 8px 10px;
+      background: var(--dark-color);
       color: var(--light-color);
+      border-radius: 5px;
+      animation: pulse 2s ease infinite;
+    }
+    @include tablet {
       font-size: 16px;
       font-weight: 700;
     }
@@ -170,6 +178,8 @@
       flex-direction: row;
       justify-content: space-between;
       padding: 0 40px;
+      display: flex;
+      justify-content: center;
     }
     @include small-tablet {
       display: flex;
@@ -188,6 +198,8 @@
     &-link {
       color: white;
       color: var(--dark-color);
+      display: flex;
+      align-items: center;
     }
   }
 }

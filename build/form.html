@@ -1,4 +1,189 @@
-<footer class="footer">
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>MaxGraph New Site</title>
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header" id="header">
+  <div class="container header__container">
+    <a href="./" class="header__logo">
+      <span class="header__nav-name">Сxiд</span>
+      <img
+        loading="lazy"
+        src="img/svg/logo.svg"
+        class="image"
+        width="40px"
+        height="40px"
+        alt="logo"
+      />
+      <span class="header__nav-name">Лом</span>
+    </a>
+
+    <nav class="nav header__nav" title="Меню" data-menu>
+      <ul class="nav__list list-reset header__list">
+        <li class="nav__item header__item--withmenu">
+          <a
+            href="#"
+            class="nav__link header__link header__link--withmenu"
+            data-menu-item
+            data-scroll
+            >БРУХТ КОЛЬОРОВИХ МЕТАЛІВ
+            <svg class="submenu__arrow">
+              <use xlink:href="img/sprite.svg#header-arrow"></use></svg
+          ></a>
+          <ul class="submenu list-reset">
+            <li class="submenu__item">
+              <a href="#copper" class="submenu__link">Мiдь</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#offers" class="submenu__link">Алюмiнiй</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#offers" class="submenu__link">Латунь</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#offers" class="submenu__link">Нержавiюча сталь</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#offers" class="submenu__link">Брухт кабелю</a>
+            </li>
+            <li class="submenu__item">
+              <a href="#offers" class="submenu__link">Iншi види брухту</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a
+            href="#price"
+            class="nav__link header__link header__link-price"
+            title="Blog and News"
+            data-menu-item
+            data-scroll
+            >Прайс</a
+          >
+        </li>
+        <li class="nav__item">
+          <a
+            href="../about.html"
+            class="nav__link header__link"
+            title="Про компанiю"
+            data-menu-item
+            data-scroll
+            >Про компанiю</a
+          >
+        </li>
+        <li class="nav__item nav__item-mobile">
+          <a
+            href="./location.html"
+            class="nav__link header__link"
+            title="Контакти"
+            data-menu-item
+            data-scroll
+            >Контакти</a
+          >
+        </li>
+      </ul>
+      <div class="header__info">
+        <a class="header__info-link" href="tel:+380955392000">
+          <svg class="header__image footer__image image">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +380955392000</a
+        >
+      </div>
+    </nav>
+    <button
+      class="burger btn-reset"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+      <main class="main"><section class="form__section">
+  <div class="container">
+    <h1 class="main-title--light main-title--center">
+      Виконуємо вивіз металлобрухту
+    </h1>
+    <p class="main-subtitle main-subtitle--center">
+      Восточної та Центральної частин України
+    </p>
+    <form action="#" id="tg" class="form order__form">
+      <h1 class="form__title">Залишити заявку на вивiз</h1>
+      <label class="form__label">
+        <input
+          type="text"
+          name="metall"
+          class="input-reset form__input"
+          placeholder="Назва металлу"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="number"
+          name="weight"
+          class="input-reset form__input"
+          placeholder="Приблизна вага"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="text"
+          name="name"
+          class="input-reset form__input input-name"
+          placeholder="Им'я"
+          required
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="tel"
+          name="phone"
+          class="input-reset form__input input-tel"
+          placeholder="Телефон"
+          required
+        />
+      </label>
+      <!-- <div class="form__cities">
+  <div class="form__radios">
+    <input
+      class="checkbox"
+      type="radio"
+      name="form"
+      value="Київ"
+      checked
+    />
+
+    <label for="Kyiv" class="form__checkbox-name">Київ</label>
+  </div>
+  <div class="form__radios">
+    <input class="checkbox" type="radio" name="form" value="Дніпро" />
+
+    <label for="Dnipro" class="form__checkbox-name">Дніпро</label>
+  </div>
+</div> -->
+      <button class="btn-reset btn form__btn">Оформить заявку</button>
+    </form>
+  </div>
+</section>
+</main>
+      <footer class="footer">
   <div class="container">
     <div class="footer__links">
       <ul class="footer__list list-reset">
@@ -230,3 +415,7 @@
     </div>
   </div>
 </footer>
+
+    </div>
+  </body>
+</html>

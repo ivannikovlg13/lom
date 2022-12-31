@@ -1,5 +1,10 @@
 /* stylelint-disable */
 
+@mixin for-hero {
+  @media (min-width: (1290px)) {
+    @content;
+  }
+}
 @mixin for-desktop {
   @media (min-width: (1025px)) {
     @content;
