@@ -10,7 +10,9 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "MaxGraph",
   "license": "ISC",
@@ -58,6 +60,7 @@
     "@popperjs/core": "^2.11.2",
     "aos": "^2.3.4",
     "axios": "^1.2.0",
+    "gh-pages": "^4.0.0",
     "graph-modal": "^1.0.4",
     "graph-tabs": "^1.0.0",
     "inputmask": "^5.0.7",
