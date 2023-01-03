@@ -1,14 +1,37 @@
 .location {
   padding: 100px 0 50px;
-  @include sub-shadow;
-  @include tablet {
-    border-bottom: 1px solid var(--light-color);
-  }
   @include mobile {
-    padding: 100px 0 50px;
+    padding: 0;
+    padding-top: 100px;
   }
-  &__item {
-    width: 50%;
-    margin: 0 auto;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include small-tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+  &__map {
+    border: 0;
+    box-shadow: 5px -3px 14px 0px #110f0b;
+    border-radius: 15px;
+    max-width: 500px;
+    @include mobile {
+      height: 300px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-color);
   }
 }
