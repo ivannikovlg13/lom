@@ -1,6 +1,9 @@
 import Swiper, { Navigation } from "swiper";
 Swiper.use([Navigation]);
 const swiper = new Swiper(".team__content", {
+  autoplay: {
+    delay: 1000,
+  },
   slidesPerView: 1,
   spaceBetween: 20,
   dots: true,

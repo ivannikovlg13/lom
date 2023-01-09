@@ -10,5 +10,11 @@
   &__item {
     width: 50%;
     margin: 0 auto;
+    @include small-tablet {
+      width: 100%;
+    }
+  }
+  &__pagination {
+    margin-top: 50px;
   }
 }

@@ -1,0 +1,55 @@
+.breadcrumbs {
+  margin-bottom: 40px;
+
+  &__inner {
+    overflow: hidden;
+    width: 100%;
+    @include mobile {
+      white-space: nowrap;
+      overflow: scroll;
+    }
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      color: var(--text-color);
+      opacity: 0.7;
+      transition: all 0.3s ease-in;
+      @include for-desktop {
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      & + li {
+        padding-left: 25px;
+
+        &::before {
+          position: absolute;
+          left: 0;
+          content: "●";
+          left: 0;
+          color: var(--dark-color);
+          margin: 0 0 0 7px;
+        }
+      }
+
+      &:last-child {
+        span {
+          padding-left: 4px;
+        }
+        a,
+        span {
+          color: var(--dark-color);
+          font-weight: 800;
+        }
+      }
+    }
+
+    a {
+      color: var(--text-color);
+    }
+  }
+}

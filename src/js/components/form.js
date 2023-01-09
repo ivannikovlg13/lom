@@ -36,6 +36,7 @@ document.getElementById("tg")?.addEventListener("submit", function (e) {
       this.weight.value = "";
       this.phone.value = "";
       document.getElementById("modal").style.display = "block";
+      document.querySelector(".page__body").style.overflow = "hidden";
     })
     .catch((err) => console.warn(err))
     .finally();

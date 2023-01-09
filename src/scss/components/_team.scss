@@ -5,12 +5,14 @@
     padding: 50px 0 70px;
   }
   &__link {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    color: var(--dark-color);
+    color: var(--text-color);
     font-weight: 800;
-    padding: 5px;
+    display: block;
+    margin-bottom: 30px;
+    text-align: right;
+    @include tablet {
+      text-align: center;
+    }
   }
   &__item {
     text-align: center;
@@ -62,10 +64,10 @@
   }
   &__btns {
     text-align: center;
-    margin-top: -35px;
+    margin-top: 25px;
     text-align: center;
     position: absolute;
-    z-index: 999999999999;
+    z-index: 14;
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -77,13 +79,13 @@
   &__slider-btn {
     @include bg-cover;
     &--prev {
-      background-image: url(../img/slider-arrow-prev.svg);
+      background-image: url(../img/arrow-prev.svg);
       height: 15px;
       width: 15px;
       margin-right: 66px;
     }
     &--next {
-      background-image: url(../img/slider-arrow-next.svg);
+      background-image: url(../img/arrow-next.svg);
       height: 15px;
       width: 15px;
     }

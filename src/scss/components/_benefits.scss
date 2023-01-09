@@ -8,9 +8,6 @@
   }
   &__img {
     width: 24px;
-    @include tablet {
-      margin-bottom: 15px;
-    }
   }
   &__subtitle {
     margin-bottom: 50px;

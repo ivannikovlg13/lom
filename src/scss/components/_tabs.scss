@@ -1,0 +1,41 @@
+.tabs {
+  &__content {
+    margin-top: 20px;
+    overflow-x: scroll;
+  }
+  &__menu {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      @include mobile {
+        margin-right: 40px;
+        margin-bottom: 20px;
+      }
+    }
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--text-color);
+      @include small-tablet {
+        font-size: 16px;
+      }
+      &:focus {
+        color: var(--dark-color);
+        background-color: transparent;
+      }
+      &--active {
+        color: var(--dark-color);
+        outline: none;
+      }
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+}

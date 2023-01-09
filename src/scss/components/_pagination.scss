@@ -1,0 +1,40 @@
+.pagination {
+  &__list {
+    font-weight: 700;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    li {
+      display: inline-block;
+
+      & + li {
+        margin-left: 6px;
+      }
+    }
+
+    a,
+    span {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      color: var(--text-color);
+
+      &.active {
+        color: var(--dark-color);
+      }
+    }
+    a {
+      .pagination__btn-next,
+      .pagination__btn-prev {
+        width: 30px;
+      }
+    }
+    img {
+      width: 8px;
+      height: 15px;
+    }
+  }
+}

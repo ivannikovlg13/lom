@@ -6,7 +6,7 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 50px;
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
       width: 80%;
@@ -21,6 +21,7 @@
     background: var(--light-color);
     border-radius: 10px;
     @include shadow;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
   }

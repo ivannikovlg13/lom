@@ -222,6 +222,7 @@ const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
     this.weight.value = "";
     this.phone.value = "";
     document.getElementById("modal").style.display = "block";
+    document.querySelector(".page__body").style.overflow = "hidden";
   }).catch(err => console.warn(err)).finally();
 });
 const validateForms = (selector, rules, afterSend) => {
@@ -266,8 +267,10 @@ function closeModal() {
   var _document, _document2;
   const modal = (_document = document) === null || _document === void 0 ? void 0 : _document.querySelector("#modal");
   const close = (_document2 = document) === null || _document2 === void 0 ? void 0 : _document2.querySelector("#close");
+  const page = document.querySelector(".page__body");
   close === null || close === void 0 ? void 0 : close.addEventListener("click", () => {
     modal.style.display = "none";
+    page.style.overflow = "visible";
   });
 }
 closeModal();
@@ -344,6 +347,9 @@ __webpack_require__.r(__webpack_exports__);
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation]);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team__content", {
+  autoplay: {
+    delay: 1000
+  },
   slidesPerView: 1,
   spaceBetween: 20,
   dots: true,

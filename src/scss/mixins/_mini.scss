@@ -1,7 +1,7 @@
 /* stylelint-disable */
 
 @mixin shadow {
-  box-shadow: 5px -3px 14px 0px #110f0b;
+  box-shadow: 5px -3px 14px 0px rgb(17 15 11 / 45%);
 }
 @mixin sub-shadow {
   box-shadow: 5px -3px 14px 0px #110f0b45;

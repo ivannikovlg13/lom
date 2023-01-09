@@ -33,7 +33,10 @@
   width: 100%;
   max-width: 940px;
   &__title {
-    padding-left: 84px;
+    text-align: center;
+    @include small-tablet {
+      font-size: 24px;
+    }
   }
   &__top {
     display: flex;
@@ -146,10 +149,6 @@
     color: var(--text-color);
     margin-bottom: 20px;
     display: none;
-    // &-alum,
-    // &-med {
-    //   display: none;
-    // }
   }
   &__subtitle {
     margin: 0;
@@ -164,6 +163,15 @@
       text-align: center;
       margin: 25px auto 20px;
       font-size: 18px;
+    }
+  }
+  &__bottom {
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 30px;
+    @include small-tablet {
+      width: 100%;
+      padding-right: 0;
     }
   }
   &__list {
@@ -213,54 +221,5 @@
   @include mobile {
     padding: 20px;
     padding-top: 40px;
-  }
-  &__bottom {
-    width: 80%;
-    margin: 0 auto;
-    padding-right: 30px;
-    @include small-tablet {
-      width: 100%;
-    }
-  }
-}
-
-.tabs {
-  &__content {
-    margin-top: 20px;
-    overflow-x: scroll;
-  }
-  &__menu {
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
-  }
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-item {
-      @include mobile {
-        margin-right: 40px;
-        margin-bottom: 20px;
-      }
-    }
-    &-btn {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 160%;
-      color: var(--dark-color);
-      &:focus {
-        color: var(--accent-color);
-        background-color: transparent;
-      }
-      &--active {
-        color: var(--accent-color);
-        background-color: transparent;
-        outline: none;
-        font-weight: 700;
-      }
-    }
-    @include mobile {
-      flex-wrap: wrap;
-    }
   }
 }
