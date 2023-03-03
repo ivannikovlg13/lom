@@ -1,8 +1,8 @@
-import Swiper, { Navigation } from "swiper";
-Swiper.use([Navigation]);
+import Swiper, { Navigation, Autoplay } from "swiper";
+Swiper.use([Navigation, Autoplay]);
 const swiper = new Swiper(".team__content", {
   autoplay: {
-    delay: 1000,
+    delay: 5000,
   },
   slidesPerView: 1,
   spaceBetween: 20,
@@ -21,5 +21,17 @@ const swiper = new Swiper(".team__content", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
+  },
+});
+const swiperHero = new Swiper(".hero__slider", {
+  autoplay: {
+    delay: 3000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  dots: true,
+  navigation: {
+    nextEl: ".team__slider-btn--next",
+    prevEl: ".team__slider-btn--prev",
   },
 });

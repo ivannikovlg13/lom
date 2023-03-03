@@ -1,4 +1,4 @@
-.order {
+.hero {
   height: 800px;
   position: relative;
   @include sub-shadow;
@@ -12,6 +12,12 @@
   }
   &__container {
     height: 100%;
+  }
+  &__wrapper {
+    max-width: 500px;
+  }
+  &__slider {
+    padding-bottom: 10px;
   }
   &__img {
     width: 500px;
@@ -40,7 +46,7 @@
   }
   &__title {
     max-width: 500px;
-    margin: 0;
+    margin: 0 auto;
     line-height: 130%;
     font-weight: 700;
     font-size: 36px;
@@ -63,7 +69,6 @@
     animation: pulse 3s ease infinite;
   }
 }
-
 @keyframes pulse {
   0% {
     transform: scale(1.05);

@@ -64,7 +64,7 @@
           animation: fade 0.3s linear;
           &__arrow {
             transform: rotate(180deg);
-            fill: var(--dark-color);
+            fill: var(--light-color);
           }
         }
       }
@@ -127,10 +127,17 @@
     line-height: 20px;
     text-transform: uppercase;
     color: var(--dark-color);
-    transition: color 0.3s ease-in-out;
+    padding: 8px 10px;
+    transition: all 0.3s ease-in-out;
+    @include for-desktop {
+      &:hover {
+        background-color: var(--dark-color);
+        border-radius: 5px;
+        color: var(--light-color);
+      }
+    }
     &-price {
       font-weight: 800;
-      padding: 8px 10px;
       background: var(--dark-color);
       color: var(--light-color);
       border-radius: 5px;
@@ -195,7 +202,7 @@
       border: none;
     }
     &-link {
-      color: white;
+      color: var(--light-color);
       color: var(--dark-color);
       display: flex;
       align-items: center;

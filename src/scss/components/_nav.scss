@@ -25,24 +25,26 @@
   }
   &__lang-menu {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     font-size: 14px;
     font-weight: 800;
     background: var(--dark-color);
     padding: 8px 10px;
     border-radius: 5px;
+    position: relative;
+    &::after {
+      content: "|";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--light-color);
+      opacity: 0.8;
+      padding-bottom: 2px;
+    }
     .current {
       a {
         color: var(--light-color);
-        position: relative;
-        &::after {
-          content: "|";
-          position: absolute;
-          left: 24px;
-          top: -1px;
-          color: var(--light-color);
-          opacity: 0.8;
-        }
       }
     }
     a {

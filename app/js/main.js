@@ -345,10 +345,10 @@ contents.forEach(content => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation]);
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team__content", {
   autoplay: {
-    delay: 1000
+    delay: 5000
   },
   slidesPerView: 1,
   spaceBetween: 20,
@@ -367,6 +367,18 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".team__conten
       slidesPerView: 3,
       spaceBetween: 30
     }
+  }
+});
+const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".hero__slider", {
+  autoplay: {
+    delay: 3000
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  dots: true,
+  navigation: {
+    nextEl: ".team__slider-btn--next",
+    prevEl: ".team__slider-btn--prev"
   }
 });
 
@@ -1149,13 +1161,14 @@ class GraphTabs {
     }
     this.options = Object.assign(defaultOptions, options);
     this.selector = selector;
-    this.tabs = document.querySelector(`[data-tabs="${selector}"]`);
+    this.tabs = document?.querySelector(`[data-tabs="${selector}"]`);
     if (this.tabs) {
       this.tabList = this.tabs.querySelector('.tabs__nav');
       this.tabsBtns = this.tabList.querySelectorAll('.tabs__nav-btn');
       this.tabsPanels = this.tabs.querySelectorAll('.tabs__panel');
     } else {
-      console.error('Селектор data-tabs не существует!');
+      // console.error('Селектор data-tabs не существует!');
+      this.tabs = '';
       return;
     }
 

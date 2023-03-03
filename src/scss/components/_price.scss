@@ -1,11 +1,10 @@
 .price {
-
   overflow: hidden;
   max-width: 700px;
   margin: 0 auto 50px;
   text-align: center;
   @include form-shadow;
-  padding: 20px 30px 40px;
+  padding: 40px 30px;
   border-radius: 10px;
   @include tablet {
     max-width: 500px;

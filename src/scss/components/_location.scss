@@ -1,9 +1,6 @@
 .location {
-  padding: 100px 0 50px;
-  @include mobile {
-    padding: 0;
-    padding-top: 100px;
-  }
+  padding: 100px 0 80px;
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

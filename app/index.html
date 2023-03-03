@@ -65,7 +65,7 @@
         </li>
         <li class="nav__item">
           <a
-            href="#price"
+            href="../#price"
             class="nav__link header__link header__link-price"
             title="Прайс "
             data-menu-item
@@ -94,8 +94,8 @@
           >
         </li>
         <ul class="nav__lang-menu list-reset" title="Язик">
-          <li class="current"><a href="#">RU</a></li>
-          <li><a href="#">UA</a></li>
+          <li class="current"><a href="#">UA</a></li>
+          <li><a href="#">RU</a></li>
         </ul>
       </ul>
 
@@ -122,23 +122,49 @@
 </header>
 
       <main class="main">
-        <section class="order" id="order">
-  <div class="container order__container">
-    <div class="order__item">
+        <section class="hero" id="hero">
+  <div class="container hero__container">
+    <div class="hero__item">
       <img
         loading="lazy"
         src="./img/bg.jpg"
-        class="image order__img"
+        class="image hero__img"
         width="750px"
         alt="hero"
       />
-      <div class="order__content">
-        <h2 class="order__title">
-          Прийом кольорового металобрухту по всій території Україні
-        </h2>
+      <div class="swiper hero__slider">
+        <div class="swiper-wrapper hero__wrapper">
+          <div class="swiper-slide hero__content">
+            <h2 class="hero__title">
+              Прийом кольорового металобрухту по всій території Україні
+            </h2>
 
-        <h4 class="main-subtitle order__subtitle">Залишити заявку на вивіз</h4>
-        <a href="./form.html" class="btn order__btn">Залишити заявку</a>
+            <h4 class="main-subtitle hero__subtitle">
+              Залишити заявку на вивіз
+            </h4>
+            <a href="./form.html" class="btn hero__btn">Залишити заявку</a>
+          </div>
+          <div class="swiper-slide hero__content">
+            <h2 class="hero__title">
+              Прийом кольорового металобрухту по всій території Україні
+            </h2>
+
+            <h4 class="main-subtitle hero__subtitle">
+              Залишити заявку на вивіз
+            </h4>
+            <a href="./form.html" class="btn hero__btn">Залишити заявку</a>
+          </div>
+          <div class="swiper-slide hero__content">
+            <h2 class="hero__title">
+              Прийом кольорового металобрухту по всій території Україні
+            </h2>
+
+            <h4 class="main-subtitle hero__subtitle">
+              Залишити заявку на вивіз
+            </h4>
+            <a href="./form.html" class="btn hero__btn">Залишити заявку</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -494,8 +520,7 @@
   }
 </script>
 
-        <!-- Accordion -->
-<section class="price" id="price">
+        <section class="price" id="price">
   <img
     loading="lazy"
     src="./img/svg/weight.svg"
@@ -899,6 +924,74 @@
     </div>
   </div>
 </section>
+ <section class="form__section">
+  <div class="container form__container">
+    <div class="form__map">
+      <div class="form__content">
+        <h2>Виконуємо вивіз металлобрухту</h2>
+        <p class="main-subtitle main-subtitle--center">
+          Восточної та Центральної частин України
+        </p>
+      </div>
+    </div>
+    <form action="#" id="tg" class="form order__form">
+      <h1 class="form__title">Залишити заявку на вивiз</h1>
+      <label class="form__label">
+        <input
+          type="text"
+          name="metall"
+          class="input-reset form__input"
+          placeholder="Назва металлу"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="number"
+          name="weight"
+          class="input-reset form__input"
+          placeholder="Приблизна вага (кг)"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="text"
+          name="name"
+          class="input-reset form__input input-name"
+          placeholder="Им'я"
+          required
+        />
+      </label>
+      <label class="form__label">
+        <input
+          type="tel"
+          name="phone"
+          class="input-reset form__input input-tel"
+          placeholder="Телефон"
+          required
+        />
+      </label>
+      <!-- <div class="form__cities">
+  <div class="form__radios">
+    <input
+      class="checkbox"
+      type="radio"
+      name="form"
+      value="Київ"
+      checked
+    />
+
+    <label for="Kyiv" class="form__checkbox-name">Київ</label>
+  </div>
+  <div class="form__radios">
+    <input class="checkbox" type="radio" name="form" value="Дніпро" />
+
+    <label for="Dnipro" class="form__checkbox-name">Дніпро</label>
+  </div>
+</div> -->
+      <button class="btn-reset btn form__btn">Оформить заявку</button>
+    </form>
+  </div>
+</section>
 
       </main>
       <footer class="footer">
@@ -970,7 +1063,7 @@
       <ul class="footer__list list-reset">
         Основной брухт
         <li class="footer__list--item">
-          <a href="#" class="footer__list-link">
+          <a href="./copper.html" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#copper"></use>
@@ -1091,7 +1184,7 @@
         </li>
         <li class="footer__list--item">
           <a
-            href="https://viber/add?number=380955392000"
+          href="viber://chat/?number=+380955392000"
             class="footer__list-link"
           >
             <div class="image-wrapper footer__image-wrapper">
@@ -1132,7 +1225,7 @@
     </div>
   </div>
 </footer>
- 
+
     </div>
     <div class="graph-modal">
   <div
