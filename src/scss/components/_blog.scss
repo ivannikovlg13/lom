@@ -1,0 +1,122 @@
+.blog {
+  padding: 100px 0 50px;
+  @include tablet {
+    border-bottom: 1px solid var(--light-color);
+  }
+  @include mobile {
+    padding: 100px 0 50px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    @include for-hero {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include tablet {
+      width: 80%;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__item {
+    max-width: 350px;
+    @include shadow;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    @include mobile {
+      max-width: 280px;
+    }
+
+    &-img {
+      height: 180px;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    &-title {
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 18px;
+      color: var(--dark-color);
+      transition: all 0.5s;
+      @include for-desktop {
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    @include mobile {
+      font-size: 13px;
+    }
+    &-date,
+    &-comments,
+    &-author {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &-comments {
+      transition: all 0.5s;
+      @include for-desktop {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &-text {
+      color: var(--dark-color);
+    }
+  }
+  &__image {
+    &-date {
+      width: 22px;
+    }
+    &-wrapper {
+      height: 32px;
+      width: 32px;
+      padding: 6px;
+      margin: 0;
+      transition: all 0.5s;
+      @include for-desktop {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &__share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  &__list {
+    margin: 20px 0;
+    padding-left: 14px;
+    &-item {
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: var(--text-color);
+    }
+  }
+}
+.pagination {
+  margin-top: 50px;
+}

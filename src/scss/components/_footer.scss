@@ -79,6 +79,9 @@
   }
   &__copyright {
     color: var(--text-color);
+    @include mobile {
+      font-size: 14px;
+    }
   }
   &__author {
     color: var(--dark-color);

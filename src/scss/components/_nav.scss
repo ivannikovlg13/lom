@@ -17,6 +17,7 @@
     visibility: hidden;
     transition: all 0.3s ease-in-out;
     padding-bottom: 100px;
+    z-index: -1;
     &__item {
       &-mobile {
         margin-top: 50px;
@@ -57,5 +58,14 @@
   visibility: visible;
   &.header__container {
     background-color: white;
+  }
+  &__item {
+    .header__item--withmenu {
+      @include for-desktop {
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
   }
 }

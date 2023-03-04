@@ -88,13 +88,16 @@
       .content__text {
         margin-top: 25px;
         padding: 0 30px;
-        border: 1px solid var(--dark-color);
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        font-size: 16px;
         display: flex;
         align-items: center;
         border-radius: 10px;
         font-weight: 700;
         @include mobile {
           padding: 0 10px;
+          font-size: 12px;
         }
 
         &:first-child {

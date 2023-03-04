@@ -39,7 +39,11 @@
     }
   }
   &__section {
-    margin: 120px 0 100px;
+    margin: 50px 0 100px;
+    @include mobile {
+      margin: 0;
+      margin-bottom: 100px;
+    }
   }
 
   &__title {
@@ -68,6 +72,7 @@
     line-height: 26px;
     @include form-shadow;
     color: var(--dark-color);
+    transition: all 0.5s;
     &:hover {
       transform: scale(1.05);
     }
@@ -81,25 +86,6 @@
       color: var(--dark-color);
     }
   }
-  &__cities {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    height: 64px;
-    align-items: center;
-    border-radius: 5px;
-    margin: 3px 0;
-    transition: all 0.3s ease-in-out;
-    @include form-shadow;
-    @include small-tablet {
-      height: 50px;
-      padding: 0 16px;
-      font-size: 14px;
-    }
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
   &__label {
     display: flex;
     flex-direction: column-reverse;
@@ -107,11 +93,5 @@
   .just-validate-error-label {
     color: var(--light-color) !important;
     margin-bottom: 3px;
-  }
-  &__checkbox {
-    &-name {
-      color: var(--dark-color);
-      font-weight: 500;
-    }
   }
 }

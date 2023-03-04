@@ -6,12 +6,20 @@
   padding: 10px 0;
   @include sub-shadow;
   background-color: var(--light-color);
-  z-index: 15;
-  @include mobile {
-    padding: 5px 0;
+  z-index: 9999;
+  @include tablet {
+    padding: 0;
   }
+
   &__container {
     @include flex-all-sb;
+    @include tablet {
+      background-color: var(--light-color);
+      padding: 10px 30px;
+    }
+    @include mobile {
+      padding: 5px 30px;
+    }
   }
   &__logo {
     z-index: 12;
@@ -53,18 +61,19 @@
     @include tablet {
       flex-direction: column-reverse;
       text-align: center;
+      z-index: 1;
     }
   }
   &__item {
     &--withmenu {
       position: relative;
       &:hover {
+        cursor: pointer;
         .submenu {
           display: block;
           animation: fade 0.3s linear;
           &__arrow {
             transform: rotate(180deg);
-            fill: var(--light-color);
           }
         }
       }
@@ -73,7 +82,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 10px;
+        top: 18px;
         border-top: 0;
         display: none;
         z-index: 10;
@@ -113,7 +122,6 @@
             }
           }
           @include tablet {
-            font-weight: 700;
             color: var(--dark-color);
             background-color: var(--light-color);
           }
@@ -129,12 +137,22 @@
     color: var(--dark-color);
     padding: 8px 10px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    @include big-desktop {
+      font-size: 13px;
+    }
     @include for-desktop {
       &:hover {
-        background-color: var(--dark-color);
+        background-color: VAR(--dark-color);
         border-radius: 5px;
         color: var(--light-color);
       }
+    }
+    @include tablet {
+      font-size: 14px;
+    }
+    @include mobile {
+      font-size: 13px;
     }
     &-price {
       font-weight: 800;
@@ -143,13 +161,7 @@
       border-radius: 5px;
       animation: pulse 2s ease infinite;
     }
-    @include tablet {
-      font-size: 16px;
-      font-weight: 700;
-    }
-    @include big-desktop {
-      font-size: 13px;
-    }
+
     .submenu__arrow {
       fill: var(--dark-color);
       @include tablet {
@@ -198,8 +210,11 @@
       border-top: 1px solid var(--light-color);
     }
     @include mobile {
-      top: 11%;
+      top: 8%;
       border: none;
+    }
+    @include small-mobile {
+      top: 5%;
     }
     &-link {
       color: var(--light-color);

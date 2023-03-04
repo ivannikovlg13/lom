@@ -12,10 +12,17 @@
   color: var(--light-color);
   background-color: var(--dark-color);
   cursor: pointer;
+  transition: all 0.3s ease-in;
+  @include for-desktop {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
   @include tablet {
     font-size: 14px;
   }
   @include mobile {
-    padding: 14px;
+    padding: 12px;
+    font-size: 13px;
   }
 }

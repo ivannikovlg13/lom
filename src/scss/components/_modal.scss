@@ -8,6 +8,9 @@
   z-index: 13;
   display: none;
   transition: all 0.8s ease 0s;
+  &.active {
+    display: block;
+  }
 
   &__body {
     min-height: 100%;

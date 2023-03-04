@@ -7,11 +7,14 @@
     border-bottom: 1px solid var(--light-color);
   }
   @include mobile {
-    height: 600px;
+    height: 700px;
     padding: 100px 0 50px;
   }
   &__container {
     height: 100%;
+  }
+  &__inner {
+    text-align: center;
   }
   &__wrapper {
     max-width: 500px;
@@ -60,6 +63,7 @@
     }
     @include mobile {
       font-size: 18px;
+      max-width: 350px;
     }
   }
   &__subtitle {

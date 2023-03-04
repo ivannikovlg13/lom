@@ -30,7 +30,7 @@
     </a>
 
     <nav class="nav header__nav" title="Меню" data-menu>
-      <ul class="nav__list list-reset header__list">
+      <ul class="list-reset header__list">
         <li class="nav__item header__item--withmenu">
           <a
             href="#"
@@ -83,7 +83,7 @@
             >Про компанiю</a
           >
         </li>
-        <li class="nav__item nav__item-mobile">
+        <li class="nav__item">
           <a
             href="./location.html"
             class="nav__link header__link"
@@ -132,38 +132,29 @@
         width="750px"
         alt="hero"
       />
-      <div class="swiper hero__slider">
-        <div class="swiper-wrapper hero__wrapper">
-          <div class="swiper-slide hero__content">
-            <h2 class="hero__title">
-              Прийом кольорового металобрухту по всій території Україні
-            </h2>
-
-            <h4 class="main-subtitle hero__subtitle">
-              Залишити заявку на вивіз
-            </h4>
-            <a href="./form.html" class="btn hero__btn">Залишити заявку</a>
+      <div class="hero__inner">
+        <div class="swiper hero__slider">
+          <div class="swiper-wrapper hero__wrapper">
+            <div class="swiper-slide hero__content">
+              <h2 class="hero__title">
+                Прийом кольорового металобрухту по всій території Україні
+              </h2>
+            </div>
+            <div class="swiper-slide hero__content">
+              <h2 class="hero__title">
+                Прийом кольорового металобрухту по всій території Україні
+              </h2>
+            </div>
+            <div class="swiper-slide hero__content">
+              <h2 class="hero__title">
+                Прийом кольорового металобрухту по всій території Україні
+              </h2>
+            </div>
           </div>
-          <div class="swiper-slide hero__content">
-            <h2 class="hero__title">
-              Прийом кольорового металобрухту по всій території Україні
-            </h2>
-
-            <h4 class="main-subtitle hero__subtitle">
-              Залишити заявку на вивіз
-            </h4>
-            <a href="./form.html" class="btn hero__btn">Залишити заявку</a>
-          </div>
-          <div class="swiper-slide hero__content">
-            <h2 class="hero__title">
-              Прийом кольорового металобрухту по всій території Україні
-            </h2>
-
-            <h4 class="main-subtitle hero__subtitle">
-              Залишити заявку на вивіз
-            </h4>
-            <a href="./form.html" class="btn hero__btn">Залишити заявку</a>
-          </div>
+        </div>
+        <div class="hero__btn">
+          <h4 class="main-subtitle hero__subtitle">Залишити заявку на вивіз</h4>
+          <a href="#form" class="btn hero__btn">Залишити заявку</a>
         </div>
       </div>
     </div>
@@ -201,324 +192,234 @@
             забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
             забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
         </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
+        <a href="#" class="offers__btn">
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
-        </button>
+        </a>
       </div>
       <div class="offers__item">
         <picture>
-          <source srcset="img/med.jpeg" type="image/avif" />
-          <source srcset="img/med.jpeg" type="image/webp" />
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/med.jpeg"
+            src="img/alum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="med"
+            alt="alum"
           />
         </picture>
         <div class="offers__inner">
           <div class="offers__box">
-            <span class="offers__title">Медь</span>
+            <span class="offers__title">Алюміній</span>
           </div>
           <p class="offers__text">
-            Прийом міді у Дніпрі та Києві. Поводження з мідним брухтом У чистому
-            вигляді матеріал відрізняється м'якістю та пластичністю. Для надання
-            йому твердості до сплаву додають домішки. Порівняно з алюмінієм
-            електропровідність практично в 2 рази вище. Мідь є різновидом
-            важкого металу, перевагою якого є хороша електропровідність та
-            теплопровідність.
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
         </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
+        <a href="#" class="offers__btn">
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
-        </button>
+        </a>
       </div>
       <div class="offers__item">
         <picture>
-          <source srcset="img/latun.jpeg" type="image/avif" />
-          <source srcset="img/latun.jpeg" type="image/webp" />
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/latun.jpeg"
+            src="img/alum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="latun"
+            alt="alum"
           />
         </picture>
         <div class="offers__inner">
           <div class="offers__box">
-            <span class="offers__title">Латунь</span>
+            <span class="offers__title">Алюміній</span>
           </div>
           <p class="offers__text">
-            Краща ціна здачі латуні в Києві та Дніпрі. Ми впевнені, що у кожного
-            з нас є дача, гараж або будь-яка побутова споруда з латтуними
-            деталями, що лежать без діла. Не втрачайте шанс гарненько
-            підзаробити і дати металу друге життя.
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
         </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
+        <a href="#" class="offers__btn">
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
-        </button>
+        </a>
       </div>
       <div class="offers__item">
         <picture>
-          <source srcset="img/nerj.jpeg" type="image/avif" />
-          <source srcset="img/nerj.jpeg" type="image/webp" />
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/nerj.jpeg"
+            src="img/alum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="nerj"
+            alt="alum"
           />
         </picture>
         <div class="offers__inner">
           <div class="offers__box">
-            <span class="offers__title">Нержавіюча сталь</span>
+            <span class="offers__title">Алюміній</span>
           </div>
           <p class="offers__text">
-            Прийом брухту нержавіючої сталі в Києві та Дніпрі.Компанія Схід-Лом
-            займеться прийомом нержавіючої сталі в будь-якій кількості за
-            найвигіднішою ціною на ринку. Ми позбавимо вас від головного болю з
-            найвигіднішою винагородою для Вас.Найвигідніша утилізація
-            нержавіючої сталі у Києві та Дніпрі у нас.
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
         </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
-          <span class="offers__btn--text"> Докладніше</span>
-          <svg class="offers__arrow">
-            <use xlink:href="img/sprite.svg#offers-arrow"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="offers__item">
-        <picture>
-          <source srcset="img/kabel.jpeg" type="image/avif" />
-          <source srcset="img/kabel.jpeg" type="image/webp" />
-          <img
-            loading="lazy"
-            id="offers__img"
-            src="img/kabel.jpeg"
-            class="image offers__img"
-            width="100%"
-            alt="kabel"
-          />
-        </picture>
-        <div class="offers__inner">
-          <div class="offers__box">
-            <span class="offers__title">Брухт кабелю</span>
-          </div>
-          <p class="offers__text">
-            Здача кабельного брухту - це дуже прибуткова справа. Так як
-            внутрішня частина дроту містить кольоровий метал високої якості,
-            говорити про вигоду навіть не доводиться.Наші фахівці швидко
-            визначать склад даного продукту та його вагу.І чесно розрахуються за
-            кожен грам продукції.
-          </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
-        </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
+        <a href="#" class="offers__btn">
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
-        </button>
+        </a>
       </div>
       <div class="offers__item">
         <picture>
-          <source srcset="img/plata.jpeg" type="image/avif" />
-          <source srcset="img/plata.jpeg" type="image/webp" />
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/plata.jpeg"
+            src="img/alum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="plata"
+            alt="alum"
           />
         </picture>
         <div class="offers__inner">
           <div class="offers__box">
-            <span class="offers__title">Електронний брухт</span>
+            <span class="offers__title">Алюміній</span>
           </div>
           <p class="offers__text">
-            Скупка плат и электронного лома в Запорожье Электронный лом – один
-            из наиболее многокомпонентных и сложных видов металлургического
-            сырья. Он содержит различные ценные металлы, вещества и соединения.
-            Такие платы входят в состав различных устройств. В неликвидных
-            деталях содержатся драгметаллы.
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
         </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
-          <span class="offers__btn--text"> Докладніше</span>
-          <svg class="offers__arrow">
-            <use xlink:href="img/sprite.svg#offers-arrow"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="offers__item">
-        <picture>
-          <source srcset="img/motor.jpeg" type="image/avif" />
-          <source srcset="img/motor.jpeg" type="image/webp" />
-          <img
-            loading="lazy"
-            id="offers__img"
-            src="img/motor.jpeg"
-            class="image offers__img"
-            width="100%"
-            alt="motor"
-          />
-        </picture>
-        <div class="offers__inner">
-          <div class="offers__box">
-            <span class="offers__title">Електродвигуни б/в </span>
-          </div>
-          <p class="offers__text">
-            Перетворювачі напруги, що вийшли з ладу, можна вигідно здати на
-            брухт для подальшої переробки. Компанія «Гармет» готова купити
-            трансформатори оптом або в роздріб, що були у використанні. У
-            конструкції цих пристроїв є деталі із кольорових та чорних металів,
-            на продажу яких можна заробити солідну суму.
-          </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
-        </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
+        <a href="#" class="offers__btn">
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
-        </button>
+        </a>
       </div>
       <div class="offers__item">
         <picture>
-          <source srcset="img/accum.jpeg" type="image/avif" />
-          <source srcset="img/accum.jpeg" type="image/webp" />
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
           <img
             loading="lazy"
             id="offers__img"
-            src="img/accum.jpeg"
+            src="img/alum.jpeg"
             class="image offers__img"
             width="100%"
-            alt="accumulator"
+            alt="alum"
           />
         </picture>
         <div class="offers__inner">
           <div class="offers__box">
-            <span class="offers__title">Автоаккумулятори б/в </span>
+            <span class="offers__title">Алюміній</span>
           </div>
           <p class="offers__text">
-            Перетворювачі напруги, що вийшли з ладу, можна вигідно здати на
-            брухт для подальшої переробки. Компанія «Гармет» готова купити
-            трансформатори оптом або в роздріб, що були у використанні. У
-            конструкції цих пристроїв є деталі із кольорових та чорних металів,
-            на продажу яких можна заробити солідну суму.
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
           </p>
-          <button class="readmore-btn" onclick="readMore(this)">
-            Читати далі
-          </button>
         </div>
-        <button
-          id="offers__btn"
-          class="offers__btn"
-          data-graph-path="popup"
-          onclick="activeItem(this)"
-        >
+        <a href="#" class="offers__btn">
           <span class="offers__btn--text">Докладніше</span>
           <svg class="offers__arrow">
             <use xlink:href="img/sprite.svg#offers-arrow"></use>
           </svg>
-        </button>
+        </a>
+      </div>
+      <div class="offers__item">
+        <picture>
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
+          <img
+            loading="lazy"
+            id="offers__img"
+            src="img/alum.jpeg"
+            class="image offers__img"
+            width="100%"
+            alt="alum"
+          />
+        </picture>
+        <div class="offers__inner">
+          <div class="offers__box">
+            <span class="offers__title">Алюміній</span>
+          </div>
+          <p class="offers__text">
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
+          </p>
+        </div>
+        <a href="#" class="offers__btn">
+          <span class="offers__btn--text">Докладніше</span>
+          <svg class="offers__arrow">
+            <use xlink:href="img/sprite.svg#offers-arrow"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="offers__item">
+        <picture>
+          <source srcset="img/alum.jpeg" type="image/avif" />
+          <source srcset="img/alum.jpeg" type="image/webp" />
+          <img
+            loading="lazy"
+            id="offers__img"
+            src="img/alum.jpeg"
+            class="image offers__img"
+            width="100%"
+            alt="alum"
+          />
+        </picture>
+        <div class="offers__inner">
+          <div class="offers__box">
+            <span class="offers__title">Алюміній</span>
+          </div>
+          <p class="offers__text">
+            Компанія Схід-Лом займається купівлею побутового та
+            електротехнічного алюмінію, банки профілю з даного матеріалу із
+            забрудненням від 0.5% до 2%. Ціна за цей матеріал залежить від його
+            забруднення.Пропонуємо найвигідніші пропозиції за цей металопродукт.
+          </p>
+        </div>
+        <a href="#" class="offers__btn">
+          <span class="offers__btn--text">Докладніше</span>
+          <svg class="offers__arrow">
+            <use xlink:href="img/sprite.svg#offers-arrow"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
 </section>
-<script>
-  function readMore(btn) {
-    let post = btn.parentElement;
-    post.querySelector(".dots").classList.toggle("hide");
-    post.querySelector(".more").classList.toggle("hide");
-    btn.textContent == "Скрити текст"
-      ? (btn.textContent = "Читати далі")
-      : (btn.textContent = "Скрити текст");
-  }
-  function activeItem(btn) {
-    let popupImage = document.querySelector("#popup__image");
-    let popupTitle = document.querySelector(".popup__title");
-    let item = btn.parentElement;
-    let img = item.querySelector(".offers__img");
-    let title = item.querySelector(".offers__title");
-    popupImage.src = img.src;
-    popupTitle.innerHTML = title.innerHTML;
-  }
-</script>
 
         <section class="price" id="price">
   <img
@@ -921,16 +822,52 @@
           Дніпровській області.
         </p>
       </div>
+      <div class="benefits__item">
+        <div class="image-wrapper">
+          <img
+            loading="lazy"
+            src="img/dollar.svg"
+            class="image benefits__img"
+            width="70px"
+            height="70px"
+            alt="dollar-image"
+          />
+        </div>
+
+        <h5 class="benefits__item--title">Найвигідніші ціни</h5>
+        <p class="item-text">
+          Ми впевнені,що є лідарами цін в Дніпрі та області,в сфері прийому
+          металобрухту.
+        </p>
+      </div>
+      <div class="benefits__item">
+        <div class="image-wrapper">
+          <img
+            loading="lazy"
+            src="img/dollar.svg"
+            class="image benefits__img"
+            width="70px"
+            height="70px"
+            alt="dollar-image"
+          />
+        </div>
+
+        <h5 class="benefits__item--title">Найвигідніші ціни</h5>
+        <p class="item-text">
+          Ми впевнені,що є лідарами цін в Дніпрі та області,в сфері прийому
+          металобрухту.
+        </p>
+      </div>
     </div>
   </div>
 </section>
- <section class="form__section">
+ <section class="form__section" id="form">
   <div class="container form__container">
     <div class="form__map">
       <div class="form__content">
         <h2>Виконуємо вивіз металлобрухту</h2>
         <p class="main-subtitle main-subtitle--center">
-          Восточної та Центральної частин України
+          по всій території України.
         </p>
       </div>
     </div>
@@ -958,7 +895,6 @@
           name="name"
           class="input-reset form__input input-name"
           placeholder="Им'я"
-          required
         />
       </label>
       <label class="form__label">
@@ -967,27 +903,8 @@
           name="phone"
           class="input-reset form__input input-tel"
           placeholder="Телефон"
-          required
         />
       </label>
-      <!-- <div class="form__cities">
-  <div class="form__radios">
-    <input
-      class="checkbox"
-      type="radio"
-      name="form"
-      value="Київ"
-      checked
-    />
-
-    <label for="Kyiv" class="form__checkbox-name">Київ</label>
-  </div>
-  <div class="form__radios">
-    <input class="checkbox" type="radio" name="form" value="Дніпро" />
-
-    <label for="Dnipro" class="form__checkbox-name">Дніпро</label>
-  </div>
-</div> -->
       <button class="btn-reset btn form__btn">Оформить заявку</button>
     </form>
   </div>
@@ -1000,7 +917,7 @@
       <ul class="footer__list list-reset">
         ТОВ Схiд-Лом
         <li class="footer__list--item">
-          <a href="./form.html" class="footer__list-link"
+          <a href="#form" class="footer__list-link"
             ><div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#request"></use>
@@ -1040,7 +957,7 @@
           </a>
         </li>
         <li class="footer__list--item">
-          <a href="../reviews.html" class="footer__list-link">
+          <a href="../blog.html" class="footer__list-link">
             <div class="image-wrapper footer__image-wrapper">
               <svg class="footer__image image">
                 <use xlink:href="img/sprite.svg#article"></use>
@@ -1227,264 +1144,22 @@
 </footer>
 
     </div>
-    <div class="graph-modal">
-  <div
-    class="graph-modal__container popup"
-    role="dialog"
-    aria-modal="true"
-    data-graph-target="popup"
-  >
-    <button
-      class="btn-reset js-modal-close graph-modal__close"
-      aria-label="Закрыть модальное окно"
-    >
-      <img src="img/close.svg" alt="close-picture" />
-    </button>
-    <div class="graph-modal__content">
-      <h1 class="popup__title"></h1>
-      <div class="popup__top">
-        <div class="popup__image">
-          <picture>
-            <img
-              loading="lazy"
-              id="popup__image"
-              src="img/alum.jpeg"
-              class="image"
-              width="100%"
-              height="250px"
-              alt="metall"
-            />
-          </picture>
-        </div>
-      </div>
-      <div class="popup__bottom">
-        <h1 class="main-title--popup">Інформація для здавання</h1>
-        <div class="tabs" data-tabs="popup">
-          <div class="tabs__menu">
-            <ul class="tabs__nav list-reset">
-              <li class="tabs__nav-item">
-                <button class="tabs__nav-btn btn-reset" type="button">
-                  Ціни
-                </button>
-              </li>
-              <li class="tabs__nav-item">
-                <button class="tabs__nav-btn btn-reset" type="button">
-                  Новим клієнтам
-                </button>
-              </li>
-              <li class="tabs__nav-item">
-                <button class="tabs__nav-btn btn-reset" type="button">
-                  Постійним клієнтам
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="tabs__content">
-            <div class="tabs__panel">
-              <div class="popup__bottom-content">
-                <div class="popup__descr">
-                  <h3 class="popup__subtitle">
-                    Ціни на прийом у Києві та Дніпрі
-                  </h3>
-                  <p class="popup__text">
-                      Вартість вторинної сировини залежить не тільки від її
-                      виду та якості, а й від політики конкретного пункту прийому.
-                      Ціна за кг в одній організації відрізнятиметься від вартості
-                      в іншій. Наша компанія має великий досвід роботи на ринку
-                      вторинної сировини в галузі скуповування та переробки
-                      металів. За ці роки ми здобули безцінний досвід. Тому
-                      знаємо, що запорука успіху – це лояльне ставлення до бази
-                      клієнтів. Продати у нас алюміній на брухт ви зможете за
-                      найприємнішою ціною.
-                    </p>
-                    <p class="popup__text">
-                      Вартість med вторинної сировини залежить не тільки від її
-                      виду та якості, а й від політики конкретного пункту прийому.
-                      Ціна за кг в одній організації відрізнятиметься від вартості
-                      в іншій. Наша компанія має великий досвід роботи на ринку
-                      вторинної сировини в галузі скуповування та переробки
-                      металів. За ці роки ми здобули безцінний досвід. Тому
-                      знаємо, що запорука успіху – це лояльне ставлення до бази
-                      клієнтів. Продати у нас алюміній на брухт ви зможете за
-                      найприємнішою ціною.
-                    </p>
-                  </p>
-
-                  <h4 class="popup__subtitle-list">
-                    Вартість вторинної сировини залежить від типу металу та
-                    області його використання:
-                  </h4>
-                  <ul class="popup__list list-reset">
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                  </ul>
-                  <p class="popup__text">
-                    На ціноутворення впливає ступінь засміченості домішками і
-                    обсяг партії, що поставляється. Ми зацікавлені у тривалій
-                    співпраці, тому пропонуємо вигідніші розцінки постійним та
-                    оптовим постачальникам. Детальну інформацію за цінами можна
-                    у будь-який час отримати у наших менеджерів або ознайомитись
-                    з нею самостійно на сайті компанії «Гармет». Переконайтеся,
-                    що цінова політика компанії вам підходить. І вам не
-                    доведеться порівнювати ціни на алюміній у пунктах прийому і
-                    вишукувати найкращий варіант.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="tabs__panel">
-              <div class="popup__bottom-content">
-                <div class="popup__descr">
-                  <h3 class="popup__subtitle">
-                    Ціни на прийом у Києві та Дніпрі
-                  </h3>
-                  <p class="popup__text">
-                      Вартість вторинної сировини залежить не тільки від її
-                      виду та якості, а й від політики конкретного пункту прийому.
-                      Ціна за кг в одній організації відрізнятиметься від вартості
-                      в іншій. Наша компанія має великий досвід роботи на ринку
-                      вторинної сировини в галузі скуповування та переробки
-                      металів. За ці роки ми здобули безцінний досвід. Тому
-                      знаємо, що запорука успіху – це лояльне ставлення до бази
-                      клієнтів. Продати у нас алюміній на брухт ви зможете за
-                      найприємнішою ціною.
-                    </p>
-                    <p class="popup__text">
-                      Вартість med вторинної сировини залежить не тільки від її
-                      виду та якості, а й від політики конкретного пункту прийому.
-                      Ціна за кг в одній організації відрізнятиметься від вартості
-                      в іншій. Наша компанія має великий досвід роботи на ринку
-                      вторинної сировини в галузі скуповування та переробки
-                      металів. За ці роки ми здобули безцінний досвід. Тому
-                      знаємо, що запорука успіху – це лояльне ставлення до бази
-                      клієнтів. Продати у нас алюміній на брухт ви зможете за
-                      найприємнішою ціною.
-                    </p>
-                  </p>
-
-                  <h4 class="popup__subtitle-list">
-                    Вартість вторинної сировини залежить від типу металу та
-                    області його використання:
-                  </h4>
-                  <ul class="popup__list list-reset">
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                  </ul>
-                  <p class="popup__text">
-                    На ціноутворення впливає ступінь засміченості домішками і
-                    обсяг партії, що поставляється. Ми зацікавлені у тривалій
-                    співпраці, тому пропонуємо вигідніші розцінки постійним та
-                    оптовим постачальникам. Детальну інформацію за цінами можна
-                    у будь-який час отримати у наших менеджерів або ознайомитись
-                    з нею самостійно на сайті компанії «Гармет». Переконайтеся,
-                    що цінова політика компанії вам підходить. І вам не
-                    доведеться порівнювати ціни на алюміній у пунктах прийому і
-                    вишукувати найкращий варіант.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="tabs__panel">
-              <div class="popup__bottom-content">
-                <div class="popup__descr">
-                  <h3 class="popup__subtitle">
-                    Ціни на прийом у Києві та Дніпрі
-                  </h3>
-                  <p class="popup__text">
-                      Вартість вторинної сировини залежить не тільки від її
-                      виду та якості, а й від політики конкретного пункту прийому.
-                      Ціна за кг в одній організації відрізнятиметься від вартості
-                      в іншій. Наша компанія має великий досвід роботи на ринку
-                      вторинної сировини в галузі скуповування та переробки
-                      металів. За ці роки ми здобули безцінний досвід. Тому
-                      знаємо, що запорука успіху – це лояльне ставлення до бази
-                      клієнтів. Продати у нас алюміній на брухт ви зможете за
-                      найприємнішою ціною.
-                    </p>
-                    <p class="popup__text">
-                      Вартість med вторинної сировини залежить не тільки від її
-                      виду та якості, а й від політики конкретного пункту прийому.
-                      Ціна за кг в одній організації відрізнятиметься від вартості
-                      в іншій. Наша компанія має великий досвід роботи на ринку
-                      вторинної сировини в галузі скуповування та переробки
-                      металів. За ці роки ми здобули безцінний досвід. Тому
-                      знаємо, що запорука успіху – це лояльне ставлення до бази
-                      клієнтів. Продати у нас алюміній на брухт ви зможете за
-                      найприємнішою ціною.
-                    </p>
-                  </p>
-
-                  <h4 class="popup__subtitle-list">
-                    Вартість вторинної сировини залежить від типу металу та
-                    області його використання:
-                  </h4>
-                  <ul class="popup__list list-reset">
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                    <li class="popup__list-item">
-                      Найдорожче коштує електротехнічний колірмет без ізоляції
-                      та забруднень
-                    </li>
-                  </ul>
-                  <p class="popup__text">
-                    На ціноутворення впливає ступінь засміченості домішками і
-                    обсяг партії, що поставляється. Ми зацікавлені у тривалій
-                    співпраці, тому пропонуємо вигідніші розцінки постійним та
-                    оптовим постачальникам. Детальну інформацію за цінами можна
-                    у будь-який час отримати у наших менеджерів або ознайомитись
-                    з нею самостійно на сайті компанії «Гармет». Переконайтеся,
-                    що цінова політика компанії вам підходить. І вам не
-                    доведеться порівнювати ціни на алюміній у пунктах прийому і
-                    вишукувати найкращий варіант.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="modal" class="modal">
+  <div class="modal__body">
+    <div class="modal__content">
+      <a href="#" class="modal__close" id="close">
+        <img src="img/close.svg" alt="close-picture" />
+      </a>
+      <div class="modal__title">Ваша заявка прийнята!</div>
+      <div class="modal__text">З Вами зв'яжуться протягом 10 хвилин</div>
+      <img
+        class="image-wrapper modal__wrapper"
+        src="./img/success.png"
+        alt="done-image"
+      />
     </div>
   </div>
 </div>
-
 
   </body>
 </html>
