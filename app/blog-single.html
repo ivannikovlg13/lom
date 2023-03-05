@@ -100,11 +100,8 @@
 
       <div class="header__info" title="Телефон">
         <a class="header__info-link" href="tel:+380955392000">
-          <svg class="header__image footer__image image">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>
-          +380955392000</a
-        >
+          <img class="header__info-img" src="./img/phone.png" alt="phone" />
+        </a>
       </div>
     </nav>
     <button
@@ -148,7 +145,7 @@
               src="./img/clock.svg"
               class="blog__image-date"
             />
-            <span class="blog__info-text">17 Sep 2023</span>
+            <span class="blog__info-text">17 Вер 2023</span>
           </div>
           <div class="blog__info-comments">
             <img
@@ -165,7 +162,7 @@
               class="blog__image-date"
               alt="user"
             />
-            <span class="blog__info-text">Admin</span>
+            <span class="blog__info-text">Адмiн</span>
           </div>
         </div>
       </div>
@@ -220,10 +217,13 @@
     </div>
     <div class="blog-single__bottom">
       <div class="blog-single__category">
-        Категорія: <span>TOП-10</span> Теги: <span>Медь, Виробництво </span>
+        <div class="blog-single__category--name">
+          Категорія:<span>Медь, Виробництво </span>
+        </div>
+        <div class="blog-single__category--name">Теги:<span>TOП-10</span></div>
       </div>
       <div class="blog__share">
-        <h4>Поділитися:</h4>
+        Поділитися:
         <a class="image-wrapper blog__image-wrapper" href="">
           <img src="./img/svg/telegram.svg" alt="" />
         </a>
@@ -233,6 +233,81 @@
         <a class="image-wrapper blog__image-wrapper" href="">
           <img src="./img/svg/telegram.svg" alt="" />
         </a>
+      </div>
+    </div>
+    <div class="blog__comments">
+      <h2 class="blog__title">Comments</h2>
+      <div class="blog__comment">
+        <div class="blog__comment-avatar">
+          <img src="./img/med.jpeg" alt="" />
+          <h5 class="blog__comment-name">Aristocrat</h5>
+        </div>
+        <div class="blog__comment-text">
+          <div class="blog__comment-top">
+            <h4 class="blog__comment-date">дата: 21 Вер, 2023</h4>
+            <a class="blog__comment-reply" href="">Відповісти</a>
+          </div>
+          <p class="item-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="blog__comment">
+        <div class="blog__comment-avatar">
+          <img src="./img/med.jpeg" alt="" />
+          <h5 class="blog__comment-name">Адмiн</h5>
+        </div>
+        <div class="blog__comment-text">
+          <div class="blog__comment-top">
+            <h4 class="blog__comment-date">Дата: 21 Вер, 2023</h4>
+            <a class="blog__comment-reply" href="">Відповісти</a>
+          </div>
+          <p class="item-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="blog__respond">
+        <form method="post" id="respond-form" class="blog__respond-form">
+          <h2 class="form__title blog__title">Відгук</h2>
+          <div class="blog__respond-wrapper">
+            <input
+              name="name"
+              class="input-reset form__input blog__respond-input"
+              type="text"
+              placeholder="Введіть своє ім'я"
+            />
+            <input
+              name="email"
+              class="input-reset form__input blog__respond-input"
+              type="text"
+              placeholder="Введіть свою пошту"
+            />
+          </div>
+          <textarea
+            name="subject"
+            class="blog__respond-textarea"
+            placeholder="Введіть свій коментар"
+          ></textarea>
+
+          <input
+            class="submit btn-reset btn form__btn"
+            type="submit"
+            value="Видправити"
+          />
+        </form>
       </div>
     </div>
   </div>
